@@ -1,3 +1,0 @@
-/home/vitos/nuwm/programing/LabHub/build/CMakeFiles/LabHub.dir
-/home/vitos/nuwm/programing/LabHub/build/CMakeFiles/edit_cache.dir
-/home/vitos/nuwm/programing/LabHub/build/CMakeFiles/rebuild_cache.dir
