@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vitos/nuwm/programing/LabHub
+CMAKE_SOURCE_DIR = /home/vitos/nuwm/Programming/LabHub
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vitos/nuwm/programing/LabHub/build
+CMAKE_BINARY_DIR = /home/vitos/nuwm/Programming/LabHub/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/LabHub.dir/depend.make
@@ -73,144 +73,214 @@ CMakeFiles/LabHub.dir/codegen:
 .PHONY : CMakeFiles/LabHub.dir/codegen
 
 CMakeFiles/LabHub.dir/src/main.cpp.o: CMakeFiles/LabHub.dir/flags.make
-CMakeFiles/LabHub.dir/src/main.cpp.o: /home/vitos/nuwm/programing/LabHub/src/main.cpp
+CMakeFiles/LabHub.dir/src/main.cpp.o: /home/vitos/nuwm/Programming/LabHub/src/main.cpp
 CMakeFiles/LabHub.dir/src/main.cpp.o: CMakeFiles/LabHub.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitos/nuwm/programing/LabHub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LabHub.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabHub.dir/src/main.cpp.o -MF CMakeFiles/LabHub.dir/src/main.cpp.o.d -o CMakeFiles/LabHub.dir/src/main.cpp.o -c /home/vitos/nuwm/programing/LabHub/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitos/nuwm/Programming/LabHub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LabHub.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabHub.dir/src/main.cpp.o -MF CMakeFiles/LabHub.dir/src/main.cpp.o.d -o CMakeFiles/LabHub.dir/src/main.cpp.o -c /home/vitos/nuwm/Programming/LabHub/src/main.cpp
 
 CMakeFiles/LabHub.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LabHub.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitos/nuwm/programing/LabHub/src/main.cpp > CMakeFiles/LabHub.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitos/nuwm/Programming/LabHub/src/main.cpp > CMakeFiles/LabHub.dir/src/main.cpp.i
 
 CMakeFiles/LabHub.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LabHub.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitos/nuwm/programing/LabHub/src/main.cpp -o CMakeFiles/LabHub.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitos/nuwm/Programming/LabHub/src/main.cpp -o CMakeFiles/LabHub.dir/src/main.cpp.s
 
 CMakeFiles/LabHub.dir/src/UI/ConsoleUI.cpp.o: CMakeFiles/LabHub.dir/flags.make
-CMakeFiles/LabHub.dir/src/UI/ConsoleUI.cpp.o: /home/vitos/nuwm/programing/LabHub/src/UI/ConsoleUI.cpp
+CMakeFiles/LabHub.dir/src/UI/ConsoleUI.cpp.o: /home/vitos/nuwm/Programming/LabHub/src/UI/ConsoleUI.cpp
 CMakeFiles/LabHub.dir/src/UI/ConsoleUI.cpp.o: CMakeFiles/LabHub.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitos/nuwm/programing/LabHub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LabHub.dir/src/UI/ConsoleUI.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabHub.dir/src/UI/ConsoleUI.cpp.o -MF CMakeFiles/LabHub.dir/src/UI/ConsoleUI.cpp.o.d -o CMakeFiles/LabHub.dir/src/UI/ConsoleUI.cpp.o -c /home/vitos/nuwm/programing/LabHub/src/UI/ConsoleUI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitos/nuwm/Programming/LabHub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LabHub.dir/src/UI/ConsoleUI.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabHub.dir/src/UI/ConsoleUI.cpp.o -MF CMakeFiles/LabHub.dir/src/UI/ConsoleUI.cpp.o.d -o CMakeFiles/LabHub.dir/src/UI/ConsoleUI.cpp.o -c /home/vitos/nuwm/Programming/LabHub/src/UI/ConsoleUI.cpp
 
 CMakeFiles/LabHub.dir/src/UI/ConsoleUI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LabHub.dir/src/UI/ConsoleUI.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitos/nuwm/programing/LabHub/src/UI/ConsoleUI.cpp > CMakeFiles/LabHub.dir/src/UI/ConsoleUI.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitos/nuwm/Programming/LabHub/src/UI/ConsoleUI.cpp > CMakeFiles/LabHub.dir/src/UI/ConsoleUI.cpp.i
 
 CMakeFiles/LabHub.dir/src/UI/ConsoleUI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LabHub.dir/src/UI/ConsoleUI.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitos/nuwm/programing/LabHub/src/UI/ConsoleUI.cpp -o CMakeFiles/LabHub.dir/src/UI/ConsoleUI.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitos/nuwm/Programming/LabHub/src/UI/ConsoleUI.cpp -o CMakeFiles/LabHub.dir/src/UI/ConsoleUI.cpp.s
 
 CMakeFiles/LabHub.dir/src/Labs/Lab1/Lab1.cpp.o: CMakeFiles/LabHub.dir/flags.make
-CMakeFiles/LabHub.dir/src/Labs/Lab1/Lab1.cpp.o: /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Lab1.cpp
+CMakeFiles/LabHub.dir/src/Labs/Lab1/Lab1.cpp.o: /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Lab1.cpp
 CMakeFiles/LabHub.dir/src/Labs/Lab1/Lab1.cpp.o: CMakeFiles/LabHub.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitos/nuwm/programing/LabHub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LabHub.dir/src/Labs/Lab1/Lab1.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabHub.dir/src/Labs/Lab1/Lab1.cpp.o -MF CMakeFiles/LabHub.dir/src/Labs/Lab1/Lab1.cpp.o.d -o CMakeFiles/LabHub.dir/src/Labs/Lab1/Lab1.cpp.o -c /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Lab1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitos/nuwm/Programming/LabHub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LabHub.dir/src/Labs/Lab1/Lab1.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabHub.dir/src/Labs/Lab1/Lab1.cpp.o -MF CMakeFiles/LabHub.dir/src/Labs/Lab1/Lab1.cpp.o.d -o CMakeFiles/LabHub.dir/src/Labs/Lab1/Lab1.cpp.o -c /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Lab1.cpp
 
 CMakeFiles/LabHub.dir/src/Labs/Lab1/Lab1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LabHub.dir/src/Labs/Lab1/Lab1.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Lab1.cpp > CMakeFiles/LabHub.dir/src/Labs/Lab1/Lab1.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Lab1.cpp > CMakeFiles/LabHub.dir/src/Labs/Lab1/Lab1.cpp.i
 
 CMakeFiles/LabHub.dir/src/Labs/Lab1/Lab1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LabHub.dir/src/Labs/Lab1/Lab1.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Lab1.cpp -o CMakeFiles/LabHub.dir/src/Labs/Lab1/Lab1.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Lab1.cpp -o CMakeFiles/LabHub.dir/src/Labs/Lab1/Lab1.cpp.s
 
 CMakeFiles/LabHub.dir/src/Labs/Lab2/Lab2.cpp.o: CMakeFiles/LabHub.dir/flags.make
-CMakeFiles/LabHub.dir/src/Labs/Lab2/Lab2.cpp.o: /home/vitos/nuwm/programing/LabHub/src/Labs/Lab2/Lab2.cpp
+CMakeFiles/LabHub.dir/src/Labs/Lab2/Lab2.cpp.o: /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab2/Lab2.cpp
 CMakeFiles/LabHub.dir/src/Labs/Lab2/Lab2.cpp.o: CMakeFiles/LabHub.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitos/nuwm/programing/LabHub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LabHub.dir/src/Labs/Lab2/Lab2.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabHub.dir/src/Labs/Lab2/Lab2.cpp.o -MF CMakeFiles/LabHub.dir/src/Labs/Lab2/Lab2.cpp.o.d -o CMakeFiles/LabHub.dir/src/Labs/Lab2/Lab2.cpp.o -c /home/vitos/nuwm/programing/LabHub/src/Labs/Lab2/Lab2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitos/nuwm/Programming/LabHub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LabHub.dir/src/Labs/Lab2/Lab2.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabHub.dir/src/Labs/Lab2/Lab2.cpp.o -MF CMakeFiles/LabHub.dir/src/Labs/Lab2/Lab2.cpp.o.d -o CMakeFiles/LabHub.dir/src/Labs/Lab2/Lab2.cpp.o -c /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab2/Lab2.cpp
 
 CMakeFiles/LabHub.dir/src/Labs/Lab2/Lab2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LabHub.dir/src/Labs/Lab2/Lab2.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitos/nuwm/programing/LabHub/src/Labs/Lab2/Lab2.cpp > CMakeFiles/LabHub.dir/src/Labs/Lab2/Lab2.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab2/Lab2.cpp > CMakeFiles/LabHub.dir/src/Labs/Lab2/Lab2.cpp.i
 
 CMakeFiles/LabHub.dir/src/Labs/Lab2/Lab2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LabHub.dir/src/Labs/Lab2/Lab2.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitos/nuwm/programing/LabHub/src/Labs/Lab2/Lab2.cpp -o CMakeFiles/LabHub.dir/src/Labs/Lab2/Lab2.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab2/Lab2.cpp -o CMakeFiles/LabHub.dir/src/Labs/Lab2/Lab2.cpp.s
+
+CMakeFiles/LabHub.dir/src/Labs/Lab3/Lab3.cpp.o: CMakeFiles/LabHub.dir/flags.make
+CMakeFiles/LabHub.dir/src/Labs/Lab3/Lab3.cpp.o: /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab3/Lab3.cpp
+CMakeFiles/LabHub.dir/src/Labs/Lab3/Lab3.cpp.o: CMakeFiles/LabHub.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitos/nuwm/Programming/LabHub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/LabHub.dir/src/Labs/Lab3/Lab3.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabHub.dir/src/Labs/Lab3/Lab3.cpp.o -MF CMakeFiles/LabHub.dir/src/Labs/Lab3/Lab3.cpp.o.d -o CMakeFiles/LabHub.dir/src/Labs/Lab3/Lab3.cpp.o -c /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab3/Lab3.cpp
+
+CMakeFiles/LabHub.dir/src/Labs/Lab3/Lab3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LabHub.dir/src/Labs/Lab3/Lab3.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab3/Lab3.cpp > CMakeFiles/LabHub.dir/src/Labs/Lab3/Lab3.cpp.i
+
+CMakeFiles/LabHub.dir/src/Labs/Lab3/Lab3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LabHub.dir/src/Labs/Lab3/Lab3.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab3/Lab3.cpp -o CMakeFiles/LabHub.dir/src/Labs/Lab3/Lab3.cpp.s
 
 CMakeFiles/LabHub.dir/src/Labs/Lab1/Task1/Task1.cpp.o: CMakeFiles/LabHub.dir/flags.make
-CMakeFiles/LabHub.dir/src/Labs/Lab1/Task1/Task1.cpp.o: /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Task1/Task1.cpp
+CMakeFiles/LabHub.dir/src/Labs/Lab1/Task1/Task1.cpp.o: /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Task1/Task1.cpp
 CMakeFiles/LabHub.dir/src/Labs/Lab1/Task1/Task1.cpp.o: CMakeFiles/LabHub.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitos/nuwm/programing/LabHub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/LabHub.dir/src/Labs/Lab1/Task1/Task1.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabHub.dir/src/Labs/Lab1/Task1/Task1.cpp.o -MF CMakeFiles/LabHub.dir/src/Labs/Lab1/Task1/Task1.cpp.o.d -o CMakeFiles/LabHub.dir/src/Labs/Lab1/Task1/Task1.cpp.o -c /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Task1/Task1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitos/nuwm/Programming/LabHub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/LabHub.dir/src/Labs/Lab1/Task1/Task1.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabHub.dir/src/Labs/Lab1/Task1/Task1.cpp.o -MF CMakeFiles/LabHub.dir/src/Labs/Lab1/Task1/Task1.cpp.o.d -o CMakeFiles/LabHub.dir/src/Labs/Lab1/Task1/Task1.cpp.o -c /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Task1/Task1.cpp
 
 CMakeFiles/LabHub.dir/src/Labs/Lab1/Task1/Task1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LabHub.dir/src/Labs/Lab1/Task1/Task1.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Task1/Task1.cpp > CMakeFiles/LabHub.dir/src/Labs/Lab1/Task1/Task1.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Task1/Task1.cpp > CMakeFiles/LabHub.dir/src/Labs/Lab1/Task1/Task1.cpp.i
 
 CMakeFiles/LabHub.dir/src/Labs/Lab1/Task1/Task1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LabHub.dir/src/Labs/Lab1/Task1/Task1.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Task1/Task1.cpp -o CMakeFiles/LabHub.dir/src/Labs/Lab1/Task1/Task1.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Task1/Task1.cpp -o CMakeFiles/LabHub.dir/src/Labs/Lab1/Task1/Task1.cpp.s
 
 CMakeFiles/LabHub.dir/src/Labs/Lab1/Task2/Task2.cpp.o: CMakeFiles/LabHub.dir/flags.make
-CMakeFiles/LabHub.dir/src/Labs/Lab1/Task2/Task2.cpp.o: /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Task2/Task2.cpp
+CMakeFiles/LabHub.dir/src/Labs/Lab1/Task2/Task2.cpp.o: /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Task2/Task2.cpp
 CMakeFiles/LabHub.dir/src/Labs/Lab1/Task2/Task2.cpp.o: CMakeFiles/LabHub.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitos/nuwm/programing/LabHub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/LabHub.dir/src/Labs/Lab1/Task2/Task2.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabHub.dir/src/Labs/Lab1/Task2/Task2.cpp.o -MF CMakeFiles/LabHub.dir/src/Labs/Lab1/Task2/Task2.cpp.o.d -o CMakeFiles/LabHub.dir/src/Labs/Lab1/Task2/Task2.cpp.o -c /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Task2/Task2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitos/nuwm/Programming/LabHub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/LabHub.dir/src/Labs/Lab1/Task2/Task2.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabHub.dir/src/Labs/Lab1/Task2/Task2.cpp.o -MF CMakeFiles/LabHub.dir/src/Labs/Lab1/Task2/Task2.cpp.o.d -o CMakeFiles/LabHub.dir/src/Labs/Lab1/Task2/Task2.cpp.o -c /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Task2/Task2.cpp
 
 CMakeFiles/LabHub.dir/src/Labs/Lab1/Task2/Task2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LabHub.dir/src/Labs/Lab1/Task2/Task2.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Task2/Task2.cpp > CMakeFiles/LabHub.dir/src/Labs/Lab1/Task2/Task2.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Task2/Task2.cpp > CMakeFiles/LabHub.dir/src/Labs/Lab1/Task2/Task2.cpp.i
 
 CMakeFiles/LabHub.dir/src/Labs/Lab1/Task2/Task2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LabHub.dir/src/Labs/Lab1/Task2/Task2.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Task2/Task2.cpp -o CMakeFiles/LabHub.dir/src/Labs/Lab1/Task2/Task2.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Task2/Task2.cpp -o CMakeFiles/LabHub.dir/src/Labs/Lab1/Task2/Task2.cpp.s
 
 CMakeFiles/LabHub.dir/src/Labs/Lab1/Task3/Task3.cpp.o: CMakeFiles/LabHub.dir/flags.make
-CMakeFiles/LabHub.dir/src/Labs/Lab1/Task3/Task3.cpp.o: /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Task3/Task3.cpp
+CMakeFiles/LabHub.dir/src/Labs/Lab1/Task3/Task3.cpp.o: /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Task3/Task3.cpp
 CMakeFiles/LabHub.dir/src/Labs/Lab1/Task3/Task3.cpp.o: CMakeFiles/LabHub.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitos/nuwm/programing/LabHub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/LabHub.dir/src/Labs/Lab1/Task3/Task3.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabHub.dir/src/Labs/Lab1/Task3/Task3.cpp.o -MF CMakeFiles/LabHub.dir/src/Labs/Lab1/Task3/Task3.cpp.o.d -o CMakeFiles/LabHub.dir/src/Labs/Lab1/Task3/Task3.cpp.o -c /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Task3/Task3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitos/nuwm/Programming/LabHub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/LabHub.dir/src/Labs/Lab1/Task3/Task3.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabHub.dir/src/Labs/Lab1/Task3/Task3.cpp.o -MF CMakeFiles/LabHub.dir/src/Labs/Lab1/Task3/Task3.cpp.o.d -o CMakeFiles/LabHub.dir/src/Labs/Lab1/Task3/Task3.cpp.o -c /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Task3/Task3.cpp
 
 CMakeFiles/LabHub.dir/src/Labs/Lab1/Task3/Task3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LabHub.dir/src/Labs/Lab1/Task3/Task3.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Task3/Task3.cpp > CMakeFiles/LabHub.dir/src/Labs/Lab1/Task3/Task3.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Task3/Task3.cpp > CMakeFiles/LabHub.dir/src/Labs/Lab1/Task3/Task3.cpp.i
 
 CMakeFiles/LabHub.dir/src/Labs/Lab1/Task3/Task3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LabHub.dir/src/Labs/Lab1/Task3/Task3.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Task3/Task3.cpp -o CMakeFiles/LabHub.dir/src/Labs/Lab1/Task3/Task3.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Task3/Task3.cpp -o CMakeFiles/LabHub.dir/src/Labs/Lab1/Task3/Task3.cpp.s
 
 CMakeFiles/LabHub.dir/src/Labs/Lab1/Task4/Task4.cpp.o: CMakeFiles/LabHub.dir/flags.make
-CMakeFiles/LabHub.dir/src/Labs/Lab1/Task4/Task4.cpp.o: /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Task4/Task4.cpp
+CMakeFiles/LabHub.dir/src/Labs/Lab1/Task4/Task4.cpp.o: /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Task4/Task4.cpp
 CMakeFiles/LabHub.dir/src/Labs/Lab1/Task4/Task4.cpp.o: CMakeFiles/LabHub.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitos/nuwm/programing/LabHub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/LabHub.dir/src/Labs/Lab1/Task4/Task4.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabHub.dir/src/Labs/Lab1/Task4/Task4.cpp.o -MF CMakeFiles/LabHub.dir/src/Labs/Lab1/Task4/Task4.cpp.o.d -o CMakeFiles/LabHub.dir/src/Labs/Lab1/Task4/Task4.cpp.o -c /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Task4/Task4.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitos/nuwm/Programming/LabHub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/LabHub.dir/src/Labs/Lab1/Task4/Task4.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabHub.dir/src/Labs/Lab1/Task4/Task4.cpp.o -MF CMakeFiles/LabHub.dir/src/Labs/Lab1/Task4/Task4.cpp.o.d -o CMakeFiles/LabHub.dir/src/Labs/Lab1/Task4/Task4.cpp.o -c /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Task4/Task4.cpp
 
 CMakeFiles/LabHub.dir/src/Labs/Lab1/Task4/Task4.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LabHub.dir/src/Labs/Lab1/Task4/Task4.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Task4/Task4.cpp > CMakeFiles/LabHub.dir/src/Labs/Lab1/Task4/Task4.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Task4/Task4.cpp > CMakeFiles/LabHub.dir/src/Labs/Lab1/Task4/Task4.cpp.i
 
 CMakeFiles/LabHub.dir/src/Labs/Lab1/Task4/Task4.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LabHub.dir/src/Labs/Lab1/Task4/Task4.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Task4/Task4.cpp -o CMakeFiles/LabHub.dir/src/Labs/Lab1/Task4/Task4.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Task4/Task4.cpp -o CMakeFiles/LabHub.dir/src/Labs/Lab1/Task4/Task4.cpp.s
 
 CMakeFiles/LabHub.dir/src/Labs/Lab2/Task1/Task1.cpp.o: CMakeFiles/LabHub.dir/flags.make
-CMakeFiles/LabHub.dir/src/Labs/Lab2/Task1/Task1.cpp.o: /home/vitos/nuwm/programing/LabHub/src/Labs/Lab2/Task1/Task1.cpp
+CMakeFiles/LabHub.dir/src/Labs/Lab2/Task1/Task1.cpp.o: /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab2/Task1/Task1.cpp
 CMakeFiles/LabHub.dir/src/Labs/Lab2/Task1/Task1.cpp.o: CMakeFiles/LabHub.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitos/nuwm/programing/LabHub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/LabHub.dir/src/Labs/Lab2/Task1/Task1.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabHub.dir/src/Labs/Lab2/Task1/Task1.cpp.o -MF CMakeFiles/LabHub.dir/src/Labs/Lab2/Task1/Task1.cpp.o.d -o CMakeFiles/LabHub.dir/src/Labs/Lab2/Task1/Task1.cpp.o -c /home/vitos/nuwm/programing/LabHub/src/Labs/Lab2/Task1/Task1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitos/nuwm/Programming/LabHub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/LabHub.dir/src/Labs/Lab2/Task1/Task1.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabHub.dir/src/Labs/Lab2/Task1/Task1.cpp.o -MF CMakeFiles/LabHub.dir/src/Labs/Lab2/Task1/Task1.cpp.o.d -o CMakeFiles/LabHub.dir/src/Labs/Lab2/Task1/Task1.cpp.o -c /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab2/Task1/Task1.cpp
 
 CMakeFiles/LabHub.dir/src/Labs/Lab2/Task1/Task1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LabHub.dir/src/Labs/Lab2/Task1/Task1.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitos/nuwm/programing/LabHub/src/Labs/Lab2/Task1/Task1.cpp > CMakeFiles/LabHub.dir/src/Labs/Lab2/Task1/Task1.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab2/Task1/Task1.cpp > CMakeFiles/LabHub.dir/src/Labs/Lab2/Task1/Task1.cpp.i
 
 CMakeFiles/LabHub.dir/src/Labs/Lab2/Task1/Task1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LabHub.dir/src/Labs/Lab2/Task1/Task1.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitos/nuwm/programing/LabHub/src/Labs/Lab2/Task1/Task1.cpp -o CMakeFiles/LabHub.dir/src/Labs/Lab2/Task1/Task1.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab2/Task1/Task1.cpp -o CMakeFiles/LabHub.dir/src/Labs/Lab2/Task1/Task1.cpp.s
 
 CMakeFiles/LabHub.dir/src/Labs/Lab2/Task2/Task2.cpp.o: CMakeFiles/LabHub.dir/flags.make
-CMakeFiles/LabHub.dir/src/Labs/Lab2/Task2/Task2.cpp.o: /home/vitos/nuwm/programing/LabHub/src/Labs/Lab2/Task2/Task2.cpp
+CMakeFiles/LabHub.dir/src/Labs/Lab2/Task2/Task2.cpp.o: /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab2/Task2/Task2.cpp
 CMakeFiles/LabHub.dir/src/Labs/Lab2/Task2/Task2.cpp.o: CMakeFiles/LabHub.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitos/nuwm/programing/LabHub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/LabHub.dir/src/Labs/Lab2/Task2/Task2.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabHub.dir/src/Labs/Lab2/Task2/Task2.cpp.o -MF CMakeFiles/LabHub.dir/src/Labs/Lab2/Task2/Task2.cpp.o.d -o CMakeFiles/LabHub.dir/src/Labs/Lab2/Task2/Task2.cpp.o -c /home/vitos/nuwm/programing/LabHub/src/Labs/Lab2/Task2/Task2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitos/nuwm/Programming/LabHub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/LabHub.dir/src/Labs/Lab2/Task2/Task2.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabHub.dir/src/Labs/Lab2/Task2/Task2.cpp.o -MF CMakeFiles/LabHub.dir/src/Labs/Lab2/Task2/Task2.cpp.o.d -o CMakeFiles/LabHub.dir/src/Labs/Lab2/Task2/Task2.cpp.o -c /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab2/Task2/Task2.cpp
 
 CMakeFiles/LabHub.dir/src/Labs/Lab2/Task2/Task2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LabHub.dir/src/Labs/Lab2/Task2/Task2.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitos/nuwm/programing/LabHub/src/Labs/Lab2/Task2/Task2.cpp > CMakeFiles/LabHub.dir/src/Labs/Lab2/Task2/Task2.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab2/Task2/Task2.cpp > CMakeFiles/LabHub.dir/src/Labs/Lab2/Task2/Task2.cpp.i
 
 CMakeFiles/LabHub.dir/src/Labs/Lab2/Task2/Task2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LabHub.dir/src/Labs/Lab2/Task2/Task2.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitos/nuwm/programing/LabHub/src/Labs/Lab2/Task2/Task2.cpp -o CMakeFiles/LabHub.dir/src/Labs/Lab2/Task2/Task2.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab2/Task2/Task2.cpp -o CMakeFiles/LabHub.dir/src/Labs/Lab2/Task2/Task2.cpp.s
+
+CMakeFiles/LabHub.dir/src/Labs/Lab3/Task1/Task1.cpp.o: CMakeFiles/LabHub.dir/flags.make
+CMakeFiles/LabHub.dir/src/Labs/Lab3/Task1/Task1.cpp.o: /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab3/Task1/Task1.cpp
+CMakeFiles/LabHub.dir/src/Labs/Lab3/Task1/Task1.cpp.o: CMakeFiles/LabHub.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitos/nuwm/Programming/LabHub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/LabHub.dir/src/Labs/Lab3/Task1/Task1.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabHub.dir/src/Labs/Lab3/Task1/Task1.cpp.o -MF CMakeFiles/LabHub.dir/src/Labs/Lab3/Task1/Task1.cpp.o.d -o CMakeFiles/LabHub.dir/src/Labs/Lab3/Task1/Task1.cpp.o -c /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab3/Task1/Task1.cpp
+
+CMakeFiles/LabHub.dir/src/Labs/Lab3/Task1/Task1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LabHub.dir/src/Labs/Lab3/Task1/Task1.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab3/Task1/Task1.cpp > CMakeFiles/LabHub.dir/src/Labs/Lab3/Task1/Task1.cpp.i
+
+CMakeFiles/LabHub.dir/src/Labs/Lab3/Task1/Task1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LabHub.dir/src/Labs/Lab3/Task1/Task1.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab3/Task1/Task1.cpp -o CMakeFiles/LabHub.dir/src/Labs/Lab3/Task1/Task1.cpp.s
+
+CMakeFiles/LabHub.dir/src/Labs/Lab3/Task2/Task2.cpp.o: CMakeFiles/LabHub.dir/flags.make
+CMakeFiles/LabHub.dir/src/Labs/Lab3/Task2/Task2.cpp.o: /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab3/Task2/Task2.cpp
+CMakeFiles/LabHub.dir/src/Labs/Lab3/Task2/Task2.cpp.o: CMakeFiles/LabHub.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitos/nuwm/Programming/LabHub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/LabHub.dir/src/Labs/Lab3/Task2/Task2.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabHub.dir/src/Labs/Lab3/Task2/Task2.cpp.o -MF CMakeFiles/LabHub.dir/src/Labs/Lab3/Task2/Task2.cpp.o.d -o CMakeFiles/LabHub.dir/src/Labs/Lab3/Task2/Task2.cpp.o -c /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab3/Task2/Task2.cpp
+
+CMakeFiles/LabHub.dir/src/Labs/Lab3/Task2/Task2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LabHub.dir/src/Labs/Lab3/Task2/Task2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab3/Task2/Task2.cpp > CMakeFiles/LabHub.dir/src/Labs/Lab3/Task2/Task2.cpp.i
+
+CMakeFiles/LabHub.dir/src/Labs/Lab3/Task2/Task2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LabHub.dir/src/Labs/Lab3/Task2/Task2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab3/Task2/Task2.cpp -o CMakeFiles/LabHub.dir/src/Labs/Lab3/Task2/Task2.cpp.s
+
+CMakeFiles/LabHub.dir/src/Labs/Lab3/Task3/Task3.cpp.o: CMakeFiles/LabHub.dir/flags.make
+CMakeFiles/LabHub.dir/src/Labs/Lab3/Task3/Task3.cpp.o: /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab3/Task3/Task3.cpp
+CMakeFiles/LabHub.dir/src/Labs/Lab3/Task3/Task3.cpp.o: CMakeFiles/LabHub.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitos/nuwm/Programming/LabHub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/LabHub.dir/src/Labs/Lab3/Task3/Task3.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabHub.dir/src/Labs/Lab3/Task3/Task3.cpp.o -MF CMakeFiles/LabHub.dir/src/Labs/Lab3/Task3/Task3.cpp.o.d -o CMakeFiles/LabHub.dir/src/Labs/Lab3/Task3/Task3.cpp.o -c /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab3/Task3/Task3.cpp
+
+CMakeFiles/LabHub.dir/src/Labs/Lab3/Task3/Task3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LabHub.dir/src/Labs/Lab3/Task3/Task3.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab3/Task3/Task3.cpp > CMakeFiles/LabHub.dir/src/Labs/Lab3/Task3/Task3.cpp.i
+
+CMakeFiles/LabHub.dir/src/Labs/Lab3/Task3/Task3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LabHub.dir/src/Labs/Lab3/Task3/Task3.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab3/Task3/Task3.cpp -o CMakeFiles/LabHub.dir/src/Labs/Lab3/Task3/Task3.cpp.s
+
+CMakeFiles/LabHub.dir/src/Labs/Lab3/Task4/Task4.cpp.o: CMakeFiles/LabHub.dir/flags.make
+CMakeFiles/LabHub.dir/src/Labs/Lab3/Task4/Task4.cpp.o: /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab3/Task4/Task4.cpp
+CMakeFiles/LabHub.dir/src/Labs/Lab3/Task4/Task4.cpp.o: CMakeFiles/LabHub.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitos/nuwm/Programming/LabHub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/LabHub.dir/src/Labs/Lab3/Task4/Task4.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabHub.dir/src/Labs/Lab3/Task4/Task4.cpp.o -MF CMakeFiles/LabHub.dir/src/Labs/Lab3/Task4/Task4.cpp.o.d -o CMakeFiles/LabHub.dir/src/Labs/Lab3/Task4/Task4.cpp.o -c /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab3/Task4/Task4.cpp
+
+CMakeFiles/LabHub.dir/src/Labs/Lab3/Task4/Task4.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LabHub.dir/src/Labs/Lab3/Task4/Task4.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab3/Task4/Task4.cpp > CMakeFiles/LabHub.dir/src/Labs/Lab3/Task4/Task4.cpp.i
+
+CMakeFiles/LabHub.dir/src/Labs/Lab3/Task4/Task4.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LabHub.dir/src/Labs/Lab3/Task4/Task4.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab3/Task4/Task4.cpp -o CMakeFiles/LabHub.dir/src/Labs/Lab3/Task4/Task4.cpp.s
 
 # Object files for target LabHub
 LabHub_OBJECTS = \
@@ -218,12 +288,17 @@ LabHub_OBJECTS = \
 "CMakeFiles/LabHub.dir/src/UI/ConsoleUI.cpp.o" \
 "CMakeFiles/LabHub.dir/src/Labs/Lab1/Lab1.cpp.o" \
 "CMakeFiles/LabHub.dir/src/Labs/Lab2/Lab2.cpp.o" \
+"CMakeFiles/LabHub.dir/src/Labs/Lab3/Lab3.cpp.o" \
 "CMakeFiles/LabHub.dir/src/Labs/Lab1/Task1/Task1.cpp.o" \
 "CMakeFiles/LabHub.dir/src/Labs/Lab1/Task2/Task2.cpp.o" \
 "CMakeFiles/LabHub.dir/src/Labs/Lab1/Task3/Task3.cpp.o" \
 "CMakeFiles/LabHub.dir/src/Labs/Lab1/Task4/Task4.cpp.o" \
 "CMakeFiles/LabHub.dir/src/Labs/Lab2/Task1/Task1.cpp.o" \
-"CMakeFiles/LabHub.dir/src/Labs/Lab2/Task2/Task2.cpp.o"
+"CMakeFiles/LabHub.dir/src/Labs/Lab2/Task2/Task2.cpp.o" \
+"CMakeFiles/LabHub.dir/src/Labs/Lab3/Task1/Task1.cpp.o" \
+"CMakeFiles/LabHub.dir/src/Labs/Lab3/Task2/Task2.cpp.o" \
+"CMakeFiles/LabHub.dir/src/Labs/Lab3/Task3/Task3.cpp.o" \
+"CMakeFiles/LabHub.dir/src/Labs/Lab3/Task4/Task4.cpp.o"
 
 # External object files for target LabHub
 LabHub_EXTERNAL_OBJECTS =
@@ -232,16 +307,21 @@ LabHub: CMakeFiles/LabHub.dir/src/main.cpp.o
 LabHub: CMakeFiles/LabHub.dir/src/UI/ConsoleUI.cpp.o
 LabHub: CMakeFiles/LabHub.dir/src/Labs/Lab1/Lab1.cpp.o
 LabHub: CMakeFiles/LabHub.dir/src/Labs/Lab2/Lab2.cpp.o
+LabHub: CMakeFiles/LabHub.dir/src/Labs/Lab3/Lab3.cpp.o
 LabHub: CMakeFiles/LabHub.dir/src/Labs/Lab1/Task1/Task1.cpp.o
 LabHub: CMakeFiles/LabHub.dir/src/Labs/Lab1/Task2/Task2.cpp.o
 LabHub: CMakeFiles/LabHub.dir/src/Labs/Lab1/Task3/Task3.cpp.o
 LabHub: CMakeFiles/LabHub.dir/src/Labs/Lab1/Task4/Task4.cpp.o
 LabHub: CMakeFiles/LabHub.dir/src/Labs/Lab2/Task1/Task1.cpp.o
 LabHub: CMakeFiles/LabHub.dir/src/Labs/Lab2/Task2/Task2.cpp.o
+LabHub: CMakeFiles/LabHub.dir/src/Labs/Lab3/Task1/Task1.cpp.o
+LabHub: CMakeFiles/LabHub.dir/src/Labs/Lab3/Task2/Task2.cpp.o
+LabHub: CMakeFiles/LabHub.dir/src/Labs/Lab3/Task3/Task3.cpp.o
+LabHub: CMakeFiles/LabHub.dir/src/Labs/Lab3/Task4/Task4.cpp.o
 LabHub: CMakeFiles/LabHub.dir/build.make
 LabHub: CMakeFiles/LabHub.dir/compiler_depend.ts
 LabHub: CMakeFiles/LabHub.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vitos/nuwm/programing/LabHub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable LabHub"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vitos/nuwm/Programming/LabHub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable LabHub"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LabHub.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -253,6 +333,6 @@ CMakeFiles/LabHub.dir/clean:
 .PHONY : CMakeFiles/LabHub.dir/clean
 
 CMakeFiles/LabHub.dir/depend:
-	cd /home/vitos/nuwm/programing/LabHub/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vitos/nuwm/programing/LabHub /home/vitos/nuwm/programing/LabHub /home/vitos/nuwm/programing/LabHub/build /home/vitos/nuwm/programing/LabHub/build /home/vitos/nuwm/programing/LabHub/build/CMakeFiles/LabHub.dir/DependInfo.cmake "--color=$(COLOR)" LabHub
+	cd /home/vitos/nuwm/Programming/LabHub/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vitos/nuwm/Programming/LabHub /home/vitos/nuwm/Programming/LabHub /home/vitos/nuwm/Programming/LabHub/build /home/vitos/nuwm/Programming/LabHub/build /home/vitos/nuwm/Programming/LabHub/build/CMakeFiles/LabHub.dir/DependInfo.cmake "--color=$(COLOR)" LabHub
 .PHONY : CMakeFiles/LabHub.dir/depend
 

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/vitos/nuwm/programing/LabHub/src
+CXX_INCLUDES = -I/home/vitos/nuwm/Programming/LabHub/src
 
 CXX_FLAGS = -std=gnu++23 -Wall -Wextra -Wpedantic
 

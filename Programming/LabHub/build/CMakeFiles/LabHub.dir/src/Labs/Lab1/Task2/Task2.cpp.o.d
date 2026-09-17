@@ -1,8 +1,8 @@
 CMakeFiles/LabHub.dir/src/Labs/Lab1/Task2/Task2.cpp.o: \
- /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Task2/Task2.cpp \
+ /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Task2/Task2.cpp \
  /usr/include/stdc-predef.h \
- /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Task2/Task2.h \
- /home/vitos/nuwm/programing/LabHub/src/Labs/Abstractions/ITask.h \
+ /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Task2/Task2.h \
+ /home/vitos/nuwm/Programming/LabHub/src/Labs/Abstractions/ITask.h \
  /usr/include/c++/16/iostream /usr/include/c++/16/bits/requires_hosted.h \
  /usr/include/c++/16/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \

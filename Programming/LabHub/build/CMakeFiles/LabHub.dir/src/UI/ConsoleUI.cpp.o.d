@@ -1,10 +1,11 @@
 CMakeFiles/LabHub.dir/src/UI/ConsoleUI.cpp.o: \
- /home/vitos/nuwm/programing/LabHub/src/UI/ConsoleUI.cpp \
+ /home/vitos/nuwm/Programming/LabHub/src/UI/ConsoleUI.cpp \
  /usr/include/stdc-predef.h \
- /home/vitos/nuwm/programing/LabHub/src/UI/ConsoleUI.h \
- /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Lab1.h \
- /home/vitos/nuwm/programing/LabHub/src/Labs/Abstractions/ILab.h \
- /home/vitos/nuwm/programing/LabHub/src/Labs/Lab2/Lab2.h \
+ /home/vitos/nuwm/Programming/LabHub/src/UI/ConsoleUI.h \
+ /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Lab1.h \
+ /home/vitos/nuwm/Programming/LabHub/src/Labs/Abstractions/ILab.h \
+ /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab2/Lab2.h \
+ /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab3/Lab3.h \
  /usr/include/c++/16/iostream /usr/include/c++/16/bits/requires_hosted.h \
  /usr/include/c++/16/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \

@@ -1,13 +1,13 @@
 CMakeFiles/LabHub.dir/src/Labs/Lab1/Lab1.cpp.o: \
- /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Lab1.cpp \
+ /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Lab1.cpp \
  /usr/include/stdc-predef.h \
- /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Task1/Task1.h \
- /home/vitos/nuwm/programing/LabHub/src/Labs/Abstractions/ITask.h \
- /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Task2/Task2.h \
- /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Task3/Task3.h \
- /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Task4/Task4.h \
- /home/vitos/nuwm/programing/LabHub/src/Labs/Lab1/Lab1.h \
- /home/vitos/nuwm/programing/LabHub/src/Labs/Abstractions/ILab.h \
+ /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Task1/Task1.h \
+ /home/vitos/nuwm/Programming/LabHub/src/Labs/Abstractions/ITask.h \
+ /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Task2/Task2.h \
+ /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Task3/Task3.h \
+ /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Task4/Task4.h \
+ /home/vitos/nuwm/Programming/LabHub/src/Labs/Lab1/Lab1.h \
+ /home/vitos/nuwm/Programming/LabHub/src/Labs/Abstractions/ILab.h \
  /usr/include/c++/16/iostream /usr/include/c++/16/bits/requires_hosted.h \
  /usr/include/c++/16/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \

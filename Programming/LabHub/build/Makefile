@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vitos/nuwm/programing/LabHub
+CMAKE_SOURCE_DIR = /home/vitos/nuwm/Programming/LabHub
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vitos/nuwm/programing/LabHub/build
+CMAKE_BINARY_DIR = /home/vitos/nuwm/Programming/LabHub/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vitos/nuwm/programing/LabHub/build/CMakeFiles /home/vitos/nuwm/programing/LabHub/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vitos/nuwm/Programming/LabHub/build/CMakeFiles /home/vitos/nuwm/Programming/LabHub/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vitos/nuwm/programing/LabHub/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vitos/nuwm/Programming/LabHub/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -321,6 +321,126 @@ src/Labs/Lab2/Task2/Task2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabHub.dir/build.make CMakeFiles/LabHub.dir/src/Labs/Lab2/Task2/Task2.cpp.s
 .PHONY : src/Labs/Lab2/Task2/Task2.cpp.s
 
+src/Labs/Lab3/Lab3.o: src/Labs/Lab3/Lab3.cpp.o
+.PHONY : src/Labs/Lab3/Lab3.o
+
+# target to build an object file
+src/Labs/Lab3/Lab3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabHub.dir/build.make CMakeFiles/LabHub.dir/src/Labs/Lab3/Lab3.cpp.o
+.PHONY : src/Labs/Lab3/Lab3.cpp.o
+
+src/Labs/Lab3/Lab3.i: src/Labs/Lab3/Lab3.cpp.i
+.PHONY : src/Labs/Lab3/Lab3.i
+
+# target to preprocess a source file
+src/Labs/Lab3/Lab3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabHub.dir/build.make CMakeFiles/LabHub.dir/src/Labs/Lab3/Lab3.cpp.i
+.PHONY : src/Labs/Lab3/Lab3.cpp.i
+
+src/Labs/Lab3/Lab3.s: src/Labs/Lab3/Lab3.cpp.s
+.PHONY : src/Labs/Lab3/Lab3.s
+
+# target to generate assembly for a file
+src/Labs/Lab3/Lab3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabHub.dir/build.make CMakeFiles/LabHub.dir/src/Labs/Lab3/Lab3.cpp.s
+.PHONY : src/Labs/Lab3/Lab3.cpp.s
+
+src/Labs/Lab3/Task1/Task1.o: src/Labs/Lab3/Task1/Task1.cpp.o
+.PHONY : src/Labs/Lab3/Task1/Task1.o
+
+# target to build an object file
+src/Labs/Lab3/Task1/Task1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabHub.dir/build.make CMakeFiles/LabHub.dir/src/Labs/Lab3/Task1/Task1.cpp.o
+.PHONY : src/Labs/Lab3/Task1/Task1.cpp.o
+
+src/Labs/Lab3/Task1/Task1.i: src/Labs/Lab3/Task1/Task1.cpp.i
+.PHONY : src/Labs/Lab3/Task1/Task1.i
+
+# target to preprocess a source file
+src/Labs/Lab3/Task1/Task1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabHub.dir/build.make CMakeFiles/LabHub.dir/src/Labs/Lab3/Task1/Task1.cpp.i
+.PHONY : src/Labs/Lab3/Task1/Task1.cpp.i
+
+src/Labs/Lab3/Task1/Task1.s: src/Labs/Lab3/Task1/Task1.cpp.s
+.PHONY : src/Labs/Lab3/Task1/Task1.s
+
+# target to generate assembly for a file
+src/Labs/Lab3/Task1/Task1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabHub.dir/build.make CMakeFiles/LabHub.dir/src/Labs/Lab3/Task1/Task1.cpp.s
+.PHONY : src/Labs/Lab3/Task1/Task1.cpp.s
+
+src/Labs/Lab3/Task2/Task2.o: src/Labs/Lab3/Task2/Task2.cpp.o
+.PHONY : src/Labs/Lab3/Task2/Task2.o
+
+# target to build an object file
+src/Labs/Lab3/Task2/Task2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabHub.dir/build.make CMakeFiles/LabHub.dir/src/Labs/Lab3/Task2/Task2.cpp.o
+.PHONY : src/Labs/Lab3/Task2/Task2.cpp.o
+
+src/Labs/Lab3/Task2/Task2.i: src/Labs/Lab3/Task2/Task2.cpp.i
+.PHONY : src/Labs/Lab3/Task2/Task2.i
+
+# target to preprocess a source file
+src/Labs/Lab3/Task2/Task2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabHub.dir/build.make CMakeFiles/LabHub.dir/src/Labs/Lab3/Task2/Task2.cpp.i
+.PHONY : src/Labs/Lab3/Task2/Task2.cpp.i
+
+src/Labs/Lab3/Task2/Task2.s: src/Labs/Lab3/Task2/Task2.cpp.s
+.PHONY : src/Labs/Lab3/Task2/Task2.s
+
+# target to generate assembly for a file
+src/Labs/Lab3/Task2/Task2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabHub.dir/build.make CMakeFiles/LabHub.dir/src/Labs/Lab3/Task2/Task2.cpp.s
+.PHONY : src/Labs/Lab3/Task2/Task2.cpp.s
+
+src/Labs/Lab3/Task3/Task3.o: src/Labs/Lab3/Task3/Task3.cpp.o
+.PHONY : src/Labs/Lab3/Task3/Task3.o
+
+# target to build an object file
+src/Labs/Lab3/Task3/Task3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabHub.dir/build.make CMakeFiles/LabHub.dir/src/Labs/Lab3/Task3/Task3.cpp.o
+.PHONY : src/Labs/Lab3/Task3/Task3.cpp.o
+
+src/Labs/Lab3/Task3/Task3.i: src/Labs/Lab3/Task3/Task3.cpp.i
+.PHONY : src/Labs/Lab3/Task3/Task3.i
+
+# target to preprocess a source file
+src/Labs/Lab3/Task3/Task3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabHub.dir/build.make CMakeFiles/LabHub.dir/src/Labs/Lab3/Task3/Task3.cpp.i
+.PHONY : src/Labs/Lab3/Task3/Task3.cpp.i
+
+src/Labs/Lab3/Task3/Task3.s: src/Labs/Lab3/Task3/Task3.cpp.s
+.PHONY : src/Labs/Lab3/Task3/Task3.s
+
+# target to generate assembly for a file
+src/Labs/Lab3/Task3/Task3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabHub.dir/build.make CMakeFiles/LabHub.dir/src/Labs/Lab3/Task3/Task3.cpp.s
+.PHONY : src/Labs/Lab3/Task3/Task3.cpp.s
+
+src/Labs/Lab3/Task4/Task4.o: src/Labs/Lab3/Task4/Task4.cpp.o
+.PHONY : src/Labs/Lab3/Task4/Task4.o
+
+# target to build an object file
+src/Labs/Lab3/Task4/Task4.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabHub.dir/build.make CMakeFiles/LabHub.dir/src/Labs/Lab3/Task4/Task4.cpp.o
+.PHONY : src/Labs/Lab3/Task4/Task4.cpp.o
+
+src/Labs/Lab3/Task4/Task4.i: src/Labs/Lab3/Task4/Task4.cpp.i
+.PHONY : src/Labs/Lab3/Task4/Task4.i
+
+# target to preprocess a source file
+src/Labs/Lab3/Task4/Task4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabHub.dir/build.make CMakeFiles/LabHub.dir/src/Labs/Lab3/Task4/Task4.cpp.i
+.PHONY : src/Labs/Lab3/Task4/Task4.cpp.i
+
+src/Labs/Lab3/Task4/Task4.s: src/Labs/Lab3/Task4/Task4.cpp.s
+.PHONY : src/Labs/Lab3/Task4/Task4.s
+
+# target to generate assembly for a file
+src/Labs/Lab3/Task4/Task4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabHub.dir/build.make CMakeFiles/LabHub.dir/src/Labs/Lab3/Task4/Task4.cpp.s
+.PHONY : src/Labs/Lab3/Task4/Task4.cpp.s
+
 src/UI/ConsoleUI.o: src/UI/ConsoleUI.cpp.o
 .PHONY : src/UI/ConsoleUI.o
 
@@ -402,6 +522,21 @@ help:
 	@echo "... src/Labs/Lab2/Task2/Task2.o"
 	@echo "... src/Labs/Lab2/Task2/Task2.i"
 	@echo "... src/Labs/Lab2/Task2/Task2.s"
+	@echo "... src/Labs/Lab3/Lab3.o"
+	@echo "... src/Labs/Lab3/Lab3.i"
+	@echo "... src/Labs/Lab3/Lab3.s"
+	@echo "... src/Labs/Lab3/Task1/Task1.o"
+	@echo "... src/Labs/Lab3/Task1/Task1.i"
+	@echo "... src/Labs/Lab3/Task1/Task1.s"
+	@echo "... src/Labs/Lab3/Task2/Task2.o"
+	@echo "... src/Labs/Lab3/Task2/Task2.i"
+	@echo "... src/Labs/Lab3/Task2/Task2.s"
+	@echo "... src/Labs/Lab3/Task3/Task3.o"
+	@echo "... src/Labs/Lab3/Task3/Task3.i"
+	@echo "... src/Labs/Lab3/Task3/Task3.s"
+	@echo "... src/Labs/Lab3/Task4/Task4.o"
+	@echo "... src/Labs/Lab3/Task4/Task4.i"
+	@echo "... src/Labs/Lab3/Task4/Task4.s"
 	@echo "... src/UI/ConsoleUI.o"
 	@echo "... src/UI/ConsoleUI.i"
 	@echo "... src/UI/ConsoleUI.s"
