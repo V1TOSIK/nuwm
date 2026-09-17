@@ -4,13 +4,14 @@
 #include "Labs/Lab3/Lab3.h"
 #include "Labs/Lab4/Lab4.h"
 #include "Labs/Lab5/Lab5.h"
+#include "Labs/Lab6/Lab6.h"
 #include <iostream>
 
 void ConsoleUI::Run() {
     int labNumber;
     while (true) {
         ClearConsole();
-        std::cout << "Choose a lab (1, 2, 3, 4 or 5): " << std::endl;
+        std::cout << "Choose a lab (1, 2, 3, 4, 5 or 6): " << std::endl;
         std::cin >> labNumber;
         switch (labNumber)
         {
@@ -39,8 +40,13 @@ void ConsoleUI::Run() {
                 lab5.Run();
                 break;
             }
+            case 6:{
+                Labs::Lab6 lab6;
+                lab6.Run();
+                break;
+            }
             default:{
-                std::cout << "Invalid lab number. Please choose either 1, 2, 3, 4 or 5." << std::endl;
+                std::cout << "Invalid lab number. Please choose either 1, 2, 3, 4, 5 or 6." << std::endl;
                 labNumber = 0;
                 break;
             }
