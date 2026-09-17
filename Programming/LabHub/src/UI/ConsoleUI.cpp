@@ -2,13 +2,19 @@
 #include "Labs/Lab1/Lab1.h"
 #include "Labs/Lab2/Lab2.h"
 #include "Labs/Lab3/Lab3.h"
+#include "Labs/Lab4/Lab4.h"
+#include "Labs/Lab5/Lab5.h"
+#include "Labs/Lab6/Lab6.h"
+#include "Labs/Lab7/Lab7.h"
+#include "Labs/Lab8/Lab8.h"
+#include "Labs/Lab9/Lab9.h"
 #include <iostream>
 
 void ConsoleUI::Run() {
     int labNumber;
     while (true) {
         ClearConsole();
-        std::cout << "Choose a lab (1, 2, or 3): " << std::endl;
+        std::cout << "Choose a lab (1, 2, 3, 4, 5, 6, 7, 8 or 9): " << std::endl;
         std::cin >> labNumber;
         switch (labNumber)
         {
@@ -27,8 +33,38 @@ void ConsoleUI::Run() {
                 lab3.Run();
                 break;
             }
+            case 4:{
+                Labs::Lab4 lab4;
+                lab4.Run();
+                break;
+            }
+            case 5:{
+                Labs::Lab5 lab5;
+                lab5.Run();
+                break;
+            }
+            case 6:{
+                Labs::Lab6 lab6;
+                lab6.Run();
+                break;
+            }
+            case 7:{
+                Labs::Lab7 lab7;
+                lab7.Run();
+                break;
+            }
+            case 8:{
+                Labs::Lab8 lab8;
+                lab8.Run();
+                break;
+            }
+            case 9:{
+                Labs::Lab9 lab9;
+                lab9.Run();
+                break;
+            }
             default:{
-                std::cout << "Invalid lab number. Please choose either 1 or 2." << std::endl;
+                std::cout << "Invalid lab number. Please choose either 1, 2, 3, 4, 5, 6, 7, 8 or 9." << std::endl;
                 labNumber = 0;
                 break;
             }

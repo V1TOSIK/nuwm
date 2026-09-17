@@ -13,7 +13,13 @@ add_executable(LabHub
     src/Labs/Lab1/Lab1.cpp
     src/Labs/Lab2/Lab2.cpp
     src/Labs/Lab3/Lab3.cpp
-    
+    src/Labs/Lab4/Lab4.cpp
+    src/Labs/Lab5/Lab5.cpp
+    src/Labs/Lab6/Lab6.cpp
+    src/Labs/Lab7/Lab7.cpp
+    src/Labs/Lab8/Lab8.cpp
+    src/Labs/Lab9/Lab9.cpp
+
     src/Labs/Lab1/Task1/Task1.cpp
     src/Labs/Lab1/Task2/Task2.cpp
     src/Labs/Lab1/Task3/Task3.cpp
@@ -26,6 +32,30 @@ add_executable(LabHub
     src/Labs/Lab3/Task2/Task2.cpp
     src/Labs/Lab3/Task3/Task3.cpp
     src/Labs/Lab3/Task4/Task4.cpp
+
+    src/Labs/Lab4/Task1/Task1.cpp
+    src/Labs/Lab4/Task2/Task2.cpp
+    src/Labs/Lab4/Task3/Task3.cpp
+
+    src/Labs/Lab5/Task1/Task1.cpp
+    src/Labs/Lab5/Task2/Task2.cpp
+    src/Labs/Lab5/Task3/Task3.cpp
+
+    src/Labs/Lab6/Task1/Task1.cpp
+    src/Labs/Lab6/Task2/Task2.cpp
+    src/Labs/Lab6/Task3/Task3.cpp
+    
+    src/Labs/Lab7/Task1/Task1.cpp
+    src/Labs/Lab7/Task2/Task2.cpp
+    src/Labs/Lab7/Task3/Task3.cpp
+    src/Labs/Lab7/Task4/Task4.cpp
+
+    src/Labs/Lab8/Task1/Task1.cpp
+    src/Labs/Lab8/Task2/Task2.cpp
+    src/Labs/Lab8/Task3/Task3.cpp
+    
+    src/Labs/Lab9/Task1/Task1.cpp
+    src/Labs/Lab9/Task2/Task2.cpp
 )
 
 target_include_directories(LabHub PRIVATE
