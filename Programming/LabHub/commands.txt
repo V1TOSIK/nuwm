@@ -27,4 +27,4 @@ cmake --build build
 =======================================================================
 
 Need: CMake
-Been in: programing/LabHub
+Be in folder: programing/LabHub

@@ -16,6 +16,7 @@ add_executable(LabHub
     src/Labs/Lab4/Lab4.cpp
     src/Labs/Lab5/Lab5.cpp
     src/Labs/Lab6/Lab6.cpp
+    src/Labs/Lab7/Lab7.cpp
     
     src/Labs/Lab1/Task1/Task1.cpp
     src/Labs/Lab1/Task2/Task2.cpp
@@ -41,6 +42,11 @@ add_executable(LabHub
     src/Labs/Lab6/Task1/Task1.cpp
     src/Labs/Lab6/Task2/Task2.cpp
     src/Labs/Lab6/Task3/Task3.cpp
+
+    src/Labs/Lab7/Task1/Task1.cpp
+    src/Labs/Lab7/Task2/Task2.cpp
+    src/Labs/Lab7/Task3/Task3.cpp
+    src/Labs/Lab7/Task4/Task4.cpp
 )
 
 target_include_directories(LabHub PRIVATE
