@@ -1,16 +1,16 @@
 #pragma once
+
 #include "Labs/Abstractions/ITask.h"
 
-namespace Lab1Tasks
+namespace Labs::Lab1::Task2
 {
     class Task2 : public ITask
     {
         public:
             void Execute() override;
-        
-        virtual ~Task2() = default;
 
         private:
-            bool Calculate(float x, float c);
+            UI _ui;
+            Logic _logic;
     };
 }

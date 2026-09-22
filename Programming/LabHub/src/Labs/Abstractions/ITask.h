@@ -1,8 +1,11 @@
 #pragma once
 
-class ITask{
+class ITask
+{
     public:
-        virtual void Execute() = 0;
+        virtual ~ITask() = default;
 
-    virtual ~ITask() = default;
+        virtual short Number() const = 0;
+        virtual std::string Description() const = 0;
+        virtual void Execute() = 0;
 };

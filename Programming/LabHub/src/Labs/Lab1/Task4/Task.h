@@ -1,13 +1,15 @@
 #pragma once
+
 #include "Labs/Abstractions/ITask.h"
 
-namespace Lab1Tasks
+namespace Labs::Lab1::Task4
 {
-    class Task3 : public ITask
+    class Task4 : public ITask
     {
         public:
             void Execute() override;
-        
-        virtual ~Task3() = default;
+
+        private:
+            UI _ui;
     };
 }
