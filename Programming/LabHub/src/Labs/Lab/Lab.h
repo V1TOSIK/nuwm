@@ -14,8 +14,10 @@ namespace Labs
         Lab(
             short number,
             std::string title,
-            std::vector<std::unique_ptr<ITask>> tasks
+            std::vector<std::unique_ptr<ITask>> tasks = {}
         );
+
+        void AddTask(std::unique_ptr<ITask> task);
 
         short GetNumber() const;
         const std::string& GetTitle() const;

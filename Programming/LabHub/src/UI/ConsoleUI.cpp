@@ -1,80 +1,108 @@
-#include "UI/ConsoleUI.h"
-#include "Labs/Lab1/Lab1.h"
-#include "Labs/Lab2/Lab2.h"
-#include "Labs/Lab3/Lab3.h"
-#include "Labs/Lab4/Lab4.h"
-#include "Labs/Lab5/Lab5.h"
-#include "Labs/Lab6/Lab6.h"
-#include "Labs/Lab7/Lab7.h"
-#include "Labs/Lab8/Lab8.h"
-#include "Labs/Lab9/Lab9.h"
+#include "Labs/Registry/LabRegistry.h"
+#include "ConsoleUI.h"
+
 #include <iostream>
 
-void ConsoleUI::Run() {
-    int labNumber;
-    while (true) {
+ConsoleUI::ConsoleUI(const Labs::LabRegistry& registry)
+    : _registry(registry)
+{
+}
+
+void ConsoleUI::Run()
+{
+    while (true)
+    {
         ClearConsole();
-        std::cout << "Choose a lab (1, 2, 3, 4, 5, 6, 7, 8 or 9): " << std::endl;
-        std::cin >> labNumber;
-        switch (labNumber)
+
+        const auto& labs = _registry.GetLabs();
+
+        std::cout << "Choose a lab:\n\n";
+
+        for (const auto& lab : labs)
         {
-            case 1:{
-                Labs::Lab1 lab1;
-                lab1.Run();
-                break;
-            }
-            case 2:{
-                Labs::Lab2 lab2;
-                lab2.Run();
-                break;
-            }
-            case 3:{
-                Labs::Lab3 lab3;
-                lab3.Run();
-                break;
-            }
-            case 4:{
-                Labs::Lab4 lab4;
-                lab4.Run();
-                break;
-            }
-            case 5:{
-                Labs::Lab5 lab5;
-                lab5.Run();
-                break;
-            }
-            case 6:{
-                Labs::Lab6 lab6;
-                lab6.Run();
-                break;
-            }
-            case 7:{
-                Labs::Lab7 lab7;
-                lab7.Run();
-                break;
-            }
-            case 8:{
-                Labs::Lab8 lab8;
-                lab8.Run();
-                break;
-            }
-            case 9:{
-                Labs::Lab9 lab9;
-                lab9.Run();
-                break;
-            }
-            default:{
-                std::cout << "Invalid lab number. Please choose either 1, 2, 3, 4, 5, 6, 7, 8 or 9." << std::endl;
-                labNumber = 0;
+            std::cout
+                << lab.GetNumber()
+                << ". "
+                << lab.GetTitle()
+                << '\n';
+        }
+
+        std::cout << "\nEnter number: ";
+
+        short labNumber;
+        std::cin >> labNumber;
+
+        const Labs::Lab* lab = _registry.Find(labNumber);
+
+        if (lab == nullptr)
+        {
+            std::cout << "Invalid lab number.\n";
+            std::cin.ignore();
+            std::cin.get();
+            continue;
+        }
+
+        ShowLab(*lab);
+    }
+}
+
+void ConsoleUI::ShowLab(const Labs::Lab& lab)
+{
+    while (true)
+    {
+        ClearConsole();
+
+        std::cout
+            << "Lab "
+            << lab.GetNumber()
+            << ": "
+            << lab.GetTitle()
+            << "\n\n";
+
+        const auto& tasks = lab.GetTasks();
+
+        for (const auto& task : tasks)
+        {
+            std::cout
+                << task->Number()
+                << ". "
+                << task->Description()
+                << '\n';
+        }
+
+        std::cout << "\nEnter task number: ";
+
+        short taskNumber;
+        std::cin >> taskNumber;
+
+        ITask* selectedTask = nullptr;
+
+        for (const auto& task : tasks)
+        {
+            if (task->Number() == taskNumber)
+            {
+                selectedTask = task.get();
                 break;
             }
         }
+
+        if (selectedTask == nullptr)
+        {
+            std::cout << "Invalid task number.\n";
+            std::cin.ignore();
+            std::cin.get();
+            continue;
+        }
+
+        selectedTask->Execute();
+
+        std::cout << "\nPress Enter to continue...";
         std::cin.ignore();
-        std::cout << "Press Enter to continue..." << std::endl;
         std::cin.get();
     }
 }
 
-void ConsoleUI::ClearConsole() {
+void ConsoleUI::ClearConsole()
+{
     std::cout << "\033[2J\033[1;1H";
 }

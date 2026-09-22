@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Labs/Lab1/Task1/Input.h"
+
 namespace Labs::Lab1::Task1
 {
     class UI

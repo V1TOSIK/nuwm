@@ -1,11 +1,13 @@
 #pragma once
 
+#include "Labs/Lab1/Task2/Input.h"
+
 namespace Labs::Lab1::Task2
 {
     class UI
     {
         public:
             Input ShowInputs();
-            void ShowResult(bool result);
+            void ShowResult(float x, float c, bool result);
     };
 }

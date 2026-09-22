@@ -3,7 +3,17 @@
 
 namespace Labs::Lab1::Task4
 {
-    void Task4::Execute() {
+    void Task::Execute() {
         _ui.ShowResult();
+    }
+
+    short Task::Number() const
+    {
+        return 4;
+    }
+
+    std::string Task::Description() const
+    {
+        return "coming soon...";
     }
 }

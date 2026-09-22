@@ -2,8 +2,7 @@
 
 #include "Labs/Registry/LabRegistry.h"
 
-namespace Labs
+namespace Labs::Bootstrap
 {
-    public:
-        void RegisterLabs(LabRegistry& registry);
+    void RegisterLabs(LabRegistry& registry);
 }

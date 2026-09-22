@@ -18,6 +18,11 @@ namespace Labs
           Tasks(move(tasks))
           { }
 
+    void Lab::AddTask(std::unique_ptr<ITask> task)
+    {
+        Tasks.push_back(std::move(task));
+    }
+
     short Lab::GetNumber() const { return Number; }
     const string& Lab::GetTitle() const { return Title; }
     const vector<unique_ptr<ITask>>& Lab::GetTasks() const { return Tasks; }

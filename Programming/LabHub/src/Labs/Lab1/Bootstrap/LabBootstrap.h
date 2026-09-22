@@ -2,7 +2,7 @@
 
 #include "Labs/Lab/Lab.h"
 
-namespace Labs::Lab1
+namespace Labs::Lab1::Bootstrap
 {
     Lab CreateLab();
 }

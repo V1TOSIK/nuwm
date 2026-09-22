@@ -1,8 +1,13 @@
 #include "UI/ConsoleUI.h"
+#include "Labs/Registry/LabRegistry.h"
+#include "Labs/Bootstrap/LabsBootstrap.h"
 
 int main()
 {
-    ConsoleUI consoleUI;
+    Labs::LabRegistry registry;
+
+    Labs::Bootstrap::RegisterLabs(registry);
+
+    ConsoleUI consoleUI(registry);
     consoleUI.Run();
-    return 0;
 }

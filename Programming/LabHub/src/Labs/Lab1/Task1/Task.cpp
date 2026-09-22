@@ -5,9 +5,19 @@
 
 namespace Labs::Lab1::Task1
 {
-    void Task1::Execute() {
+    void Task::Execute() {
         auto input = _ui.ShowInputs();
         auto result = _logic.CalculateR(input.x, input.k);
         _ui.ShowResult(input.x, input.k, result);
-    };
+    }
+
+    short Task::Number() const
+    {
+        return 1;
+    }
+
+    std::string Task::Description() const
+    {
+        return "coming soon...";
+    }
 }
