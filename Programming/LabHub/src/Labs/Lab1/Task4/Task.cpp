@@ -1,5 +1,6 @@
 #include "Labs/Lab1/Task4/Task.h"
-#include "Labs/Lab1/Task4/UI/UI.h"
+
+using std::string;
 
 namespace Labs::Lab1::Task4
 {
@@ -12,8 +13,10 @@ namespace Labs::Lab1::Task4
         return 4;
     }
 
-    std::string Task::Description() const
+    string Task::Description() const
     {
-        return "coming soon...";
+        return "Виправити синтаксичні помилки в записі наведених нижче "
+                "арифметичних виразів: \n"
+                "z=(exp(exp*lnx)-exp(-x)+0,12)/(sqrt(sin(y-1)));";
     }
 }

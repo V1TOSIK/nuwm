@@ -1,5 +1,7 @@
 #include "Labs/Lab3/Task4/Task.h"
 
+using std::string;
+
 namespace Labs::Lab3::Task4
 {
     void Task::Execute()
@@ -14,8 +16,10 @@ namespace Labs::Lab3::Task4
         return 4;
     }
 
-    std::string Task::Description() const
+    string Task::Description() const
     {
-        return "Calculate the average profit and its deviation from the minimum.";
+        return "Прибуток підприємств становить відповідно a, b, c (грошових "
+                "одиниць). Визначити наскільки середній прибуток підприємств "
+                "відрізняється від найменшого. ";
     }
 }

@@ -1,11 +1,13 @@
 #include "Labs/Lab4/Task3/UI/UI.h"
 
-#include <cmath>
 #include <iomanip>
 #include <iostream>
 
 using std::cin;
 using std::cout;
+using std::fixed;
+using std::setprecision;
+using std::setw;
 
 namespace Labs::Lab4::Task3
 {
@@ -14,41 +16,30 @@ namespace Labs::Lab4::Task3
         float xStart, xEnd, dx;
         float yStart, yEnd, dy;
 
-        cout << "Enter x_start, x_end, dx: ";
+        cout << "Введіть x_поч, x_кін, dx: ";
         cin >> xStart >> xEnd >> dx;
-        cout << "Enter y_start, y_end, dy: ";
+        cout << "Введіть y_поч, y_кін, dy: ";
         cin >> yStart >> yEnd >> dy;
 
         return {xStart, xEnd, dx, yStart, yEnd, dy};
     }
 
-    void UI::ShowResult(float xStart, float xEnd, float dx, float yStart, float yEnd, float dy)
+    void UI::ShowResult(const std::vector<PointResult>& result)
     {
         cout << "\n+------------+------------+----------------+\n";
         cout << "|     x      |     y      |       z        |\n";
         cout << "+------------+------------+----------------+\n";
 
-        const float eps = 1e-5f;
-
-        for (float x = xStart; x <= xEnd + eps; x += dx)
+        for (const auto& point : result)
         {
-            for (float y = yStart; y <= yEnd + eps; y += dy)
-            {
-                cout << "| " << std::setw(10) << std::fixed << std::setprecision(2) << x
-                     << " | " << std::setw(10) << std::fixed << std::setprecision(2) << y
-                     << " | ";
+            cout << "| " << setw(10) << fixed << setprecision(2) << point.x
+                 << " | " << setw(10) << fixed << setprecision(2) << point.y
+                 << " | ";
 
-                if (std::abs(std::cos(x + y)) < eps)
-                {
-                    cout << std::setw(14) << "Not defined" << " |\n";
-                }
-                else
-                {
-                    const float tanValue = std::tan(x + y);
-                    const float z = tanValue * tanValue + std::pow(x, 3.0f);
-                    cout << std::setw(14) << std::fixed << std::setprecision(4) << z << " |\n";
-                }
-            }
+            if (!point.defined)
+                cout << setw(14) << "Не визначено" << " |\n";
+            else
+                cout << setw(14) << fixed << setprecision(4) << point.z << " |\n";
         }
 
         cout << "+------------+------------+----------------+\n";

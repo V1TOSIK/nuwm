@@ -1,5 +1,4 @@
 #include "Labs/Lab3/Task1/Logic/Logic.h"
-
 #include <cmath>
 
 using std::abs;

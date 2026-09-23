@@ -1,10 +1,12 @@
 #include "Labs/Lab8/Task2/Logic/Logic.h"
 
+using std::vector;
+
 namespace Labs::Lab8::Task2
 {
-    std::vector<ColumnRange> Logic::Calculate(int rows, int cols, const double values[5][8])
+    vector<ColumnRange> Logic::Calculate(int rows, int cols, const double values[5][8])
     {
-        std::vector<ColumnRange> result;
+        vector<ColumnRange> result;
         result.reserve(static_cast<size_t>(cols));
 
         for (int col = 0; col < cols; ++col)

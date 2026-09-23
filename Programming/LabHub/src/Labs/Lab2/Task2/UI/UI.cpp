@@ -1,5 +1,4 @@
 #include "Labs/Lab2/Task2/UI/UI.h"
-
 #include <iostream>
 
 using std::cin;
@@ -10,7 +9,7 @@ namespace Labs::Lab2::Task2
     Input UI::ShowInputs()
     {
         float a, b, c;
-        cout << "Enter triangle sides (A, B, C):\n";
+        cout << "Введіть сторони трикутника (A, B, C):\n";
         cout << "A = ";
         cin >> a;
         cout << "B = ";
@@ -28,10 +27,10 @@ namespace Labs::Lab2::Task2
 
         if (perimeter > 0.0f)
         {
-            cout << "Triangle perimeter P = " << perimeter << '\n';
+            cout << "Периметр P = " << perimeter << '\n';
             return;
         }
 
-        cout << "Error: triangle with such sides cannot exist.\n";
+        cout << "Помилка: Трикутник з такими сторонами не можливий.\n";
     }
 }

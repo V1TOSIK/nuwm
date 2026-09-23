@@ -1,16 +1,21 @@
 #pragma once
 
-#include <vector>
-
-#include "Labs/Lab8/Task2/Input.h"
 #include "Labs/Lab8/Task2/Logic/Logic.h"
+#include <vector>
 
 namespace Labs::Lab8::Task2
 {
+    struct Input
+    {
+        int rows;
+        int cols;
+        double values[5][8];
+    };
+
     class UI
     {
-    public:
-        Input ShowInputs();
-        void ShowResult(const std::vector<ColumnRange>& ranges);
+        public:
+            Input ShowInputs();
+            void ShowResult(const std::vector<ColumnRange>& ranges);
     };
 }

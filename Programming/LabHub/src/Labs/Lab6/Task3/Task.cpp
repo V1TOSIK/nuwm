@@ -1,5 +1,7 @@
 #include "Labs/Lab6/Task3/Task.h"
 
+using std::string;
+
 namespace Labs::Lab6::Task3
 {
     void Task::Execute()
@@ -14,8 +16,9 @@ namespace Labs::Lab6::Task3
         return 3;
     }
 
-    std::string Task::Description() const
+    string Task::Description() const
     {
-        return "Compute the series value by summing terms until the accuracy threshold is reached.";
+        return "Скласти програму обчислення значення функції, яка представлена у "
+                "вигляді нескінченного ряду";
     }
 }

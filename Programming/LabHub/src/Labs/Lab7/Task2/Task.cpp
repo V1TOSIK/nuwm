@@ -1,5 +1,7 @@
 #include "Labs/Lab7/Task2/Task.h"
 
+using std::string;
+
 namespace Labs::Lab7::Task2
 {
     void Task::Execute()
@@ -14,8 +16,10 @@ namespace Labs::Lab7::Task2
         return 2;
     }
 
-    std::string Task::Description() const
+    string Task::Description() const
     {
-        return "Print the second and fourth negative values in the array.";
+        return "Вивести на друк значення 2-го і 4-го від’ємного елемента масиву "
+                "B(7) = (-2,3; 0,1; -2,3; 4,1; -3,2; -2,0; -4,0) разом із їх порядковими "
+                "номерами.";
     }
 }

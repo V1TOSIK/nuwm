@@ -2,12 +2,22 @@
 
 namespace Labs::Lab3::Task2
 {
-    Logic::Values Logic::CalculateValues(float k, float l)
+    Values Logic::CalculateResult(float k, float l)
     {
+        float a = (l + k) / 5.0f;
+        float b = l * k - 3.5f;
+        float c = (l - k) / k;
+
+        bool foundValue =
+            (a < -1.0f || a > 5.0f) ||
+            (b < -1.0f || b > 5.0f) ||
+            (c < -1.0f || c > 5.0f);
+
         return {
-            (l + k) / 5.0f,
-            l * k - 3.5f,
-            (l - k) / k
+            a,
+            b,
+            c,
+            foundValue
         };
     }
 }

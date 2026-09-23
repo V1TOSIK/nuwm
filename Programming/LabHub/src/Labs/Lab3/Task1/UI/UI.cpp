@@ -1,5 +1,4 @@
 #include "Labs/Lab3/Task1/UI/UI.h"
-
 #include <iostream>
 
 using std::cin;
@@ -10,7 +9,7 @@ namespace Labs::Lab3::Task1
     Input UI::ShowInputs()
     {
         float x;
-        cout << "Enter x: ";
+        cout << "Введіть x: ";
         cin >> x;
         return {x};
     }

@@ -1,7 +1,12 @@
 #include "Labs/Lab8/Task2/UI/UI.h"
-
 #include <iomanip>
 #include <iostream>
+
+using std::cin;
+using std::cout;
+using std::fixed;
+using std::setprecision;
+using std::vector;
 
 namespace Labs::Lab8::Task2
 {
@@ -9,10 +14,10 @@ namespace Labs::Lab8::Task2
     {
         Input input{};
 
-        std::cout << "Enter number of rows m (1..5): ";
-        std::cin >> input.rows;
-        std::cout << "Enter number of columns n (1..8): ";
-        std::cin >> input.cols;
+        cout << "Введіть кількість рядків m (1..5): ";
+        cin >> input.rows;
+        cout << "Введіть кількість колонок n (1..8): ";
+        cin >> input.cols;
 
         if (input.rows < 1 || input.rows > 5 || input.cols < 1 || input.cols > 8)
         {
@@ -21,28 +26,28 @@ namespace Labs::Lab8::Task2
             return input;
         }
 
-        std::cout << "Enter matrix A (" << input.rows << "x" << input.cols << "):\n";
+        cout << "Введіть матрицю A (" << input.rows << "x" << input.cols << "):\n";
         for (int i = 0; i < input.rows; ++i)
         {
             for (int j = 0; j < input.cols; ++j)
             {
-                std::cin >> input.values[i][j];
+                cin >> input.values[i][j];
             }
         }
 
         return input;
     }
 
-    void UI::ShowResult(const std::vector<ColumnRange>& ranges)
+    void UI::ShowResult(const vector<ColumnRange>& ranges)
     {
-        std::cout << std::fixed << std::setprecision(2);
-        std::cout << "\nResults by column:\n";
+        cout << fixed << setprecision(2);
+        cout << "\Результати по колонках:\n";
 
         for (size_t i = 0; i < ranges.size(); ++i)
         {
-            std::cout << "Column #" << (i + 1) << ": max = " << ranges[i].maxValue
-                      << ", min = " << ranges[i].minValue
-                      << ", diff = " << ranges[i].diff << "\n";
+            cout << "Колонка #" << (i + 1) << ": макс. = " << ranges[i].maxValue
+                      << ", мін. = " << ranges[i].minValue
+                      << ", різниця = " << ranges[i].diff << "\n";
         }
     }
 }

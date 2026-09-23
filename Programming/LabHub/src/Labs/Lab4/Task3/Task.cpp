@@ -1,11 +1,21 @@
 #include "Labs/Lab4/Task3/Task.h"
 
+using std::string;
+
 namespace Labs::Lab4::Task3
 {
     void Task::Execute()
     {
-        auto input = _ui.ShowInputs();
-        _ui.ShowResult(input.xStart, input.xEnd, input.dx, input.yStart, input.yEnd, input.dy);
+        const auto input = _ui.ShowInputs();
+        const auto result = _logic.Calculate(
+            input.xStart,
+            input.xEnd,
+            input.dx,
+            input.yStart,
+            input.yEnd,
+            input.dy
+        );
+        _ui.ShowResult(result);
     }
 
     short Task::Number() const
@@ -13,8 +23,11 @@ namespace Labs::Lab4::Task3
         return 3;
     }
 
-    std::string Task::Description() const
+    string Task::Description() const
     {
-        return "Generate a table of z values for a grid of x and y.";
+        return "Розробити алгоритм та написати програму обчислення значення "
+                "аргументів функції на вказаних проміжках із заданими кроками, а також "
+                "значень функції (табулювання функції двох змінних), починаючи із "
+                "заданої точки. ";
     }
 }

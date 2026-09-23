@@ -3,16 +3,21 @@
 #include <iomanip>
 #include <iostream>
 
+using std::cin;
+using std::cout;
+using std::fixed;
+using std::setprecision;
+
 namespace Labs::Lab7::Task1
 {
     Input UI::ShowInputs()
     {
         Input input{};
 
-        std::cout << "Enter 12 elements of array X:\n";
+        cout << "Введіть 12 елементів масиву X:\n";
         for (int i = 0; i < 12; ++i)
         {
-            std::cin >> input.values[i];
+            cin >> input.values[i];
         }
 
         return input;
@@ -20,17 +25,17 @@ namespace Labs::Lab7::Task1
 
     void UI::ShowResult(double sum, int count)
     {
-        std::cout << std::fixed << std::setprecision(2);
-        std::cout << "\nResults:\n";
+        cout << fixed << setprecision(2);
+        cout << "\nРезультати:\n";
 
         if (count > 0)
         {
-            std::cout << "Sum of negative elements on even positions: " << sum << "\n";
-            std::cout << "Count: " << count << "\n";
+            cout << "Сума від'ємних елементів на парних позиціях: " << sum << "\n";
+            cout << "Кількість: " << count << "\n";
         }
         else
         {
-            std::cout << "No negative elements at even positions were found.\n";
+            cout << "Від'ємних елементів на парних позиціях не знайдено.\n";
         }
     }
 }

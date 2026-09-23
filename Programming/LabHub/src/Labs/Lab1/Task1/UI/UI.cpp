@@ -1,5 +1,4 @@
 #include "Labs/Lab1/Task1/UI/UI.h"
-#include "Labs/Lab1/Task1/Input.h"
 #include <iostream>
 
 using std::cin;

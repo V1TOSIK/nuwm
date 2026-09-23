@@ -1,7 +1,6 @@
 #include "Labs/Lab1/Task2/Task.h"
-#include "Labs/Lab1/Task2/UI/UI.h"
-#include "Labs/Lab1/Task2/Logic/Logic.h"
-#include "Labs/Lab1/Task2/Input.h"
+
+using std::string;
 
 namespace Labs::Lab1::Task2
 {
@@ -16,8 +15,10 @@ namespace Labs::Lab1::Task2
         return 2;
     }
 
-    std::string Task::Description() const
+    string Task::Description() const
     {
-        return "coming soon...";
+        return "Записати мовою програмування C++ даний логічний вираз і "
+                "визначити значення результату логічних операцій TRUE або FALSE "
+                "при вказаних значеннях змінних. ";
     }
 }

@@ -7,6 +7,7 @@ namespace Labs::Lab7::Task3
         int positiveCount;
         int negativeCount;
         bool zeroFound;
+        bool valid;
     };
 
     class Logic

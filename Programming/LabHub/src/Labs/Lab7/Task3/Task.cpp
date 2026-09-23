@@ -1,20 +1,14 @@
 #include "Labs/Lab7/Task3/Task.h"
 
-#include <iostream>
+using std::string;
 
 namespace Labs::Lab7::Task3
 {
     void Task::Execute()
     {
         const auto input = _ui.ShowInputs();
-        if (input.size <= 0)
-        {
-            std::cout << "Invalid size.\n";
-            return;
-        }
-
         const auto result = _logic.Calculate(input.size, input.values);
-        _ui.ShowResult(result.positiveCount, result.negativeCount, result.zeroFound);
+        _ui.ShowResult(result.positiveCount, result.negativeCount, result.zeroFound, result.valid);
     }
 
     short Task::Number() const
@@ -22,8 +16,9 @@ namespace Labs::Lab7::Task3
         return 3;
     }
 
-    std::string Task::Description() const
+    string Task::Description() const
     {
-        return "Count positive and negative numbers before the first zero.";
+        return "У масиві А(n) (n<=7) хоча б один нуль. Визначити кількість додатніх "
+                "та кількість від’ємних елементів до першого нуля.";
     }
 }

@@ -1,13 +1,16 @@
 #pragma once
 
-#include "Labs/Lab9/Task2/Input.h"
-
 namespace Labs::Lab9::Task2
 {
+    struct Input
+    {
+        double tensor[3][3][2];
+    };
+
     class UI
     {
-    public:
-        Input ShowInputs();
-        void ShowResult(double product);
+        public:
+            Input ShowInputs();
+            void ShowResult(double product);
     };
 }

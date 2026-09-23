@@ -8,7 +8,12 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_executable(LabHub
     src/main.cpp
 
-    src/UI/ConsoleUI.cpp
+    src/UI/ConsoleUI/ConsoleUI.cpp
+    src/UI/Bootstrap/UIBootstrap.cpp
+    src/UI/Keyboard/Keyboard.cpp
+    src/UI/LabMenu/LabMenu.cpp
+    src/UI/TaskMenu/TaskMenu.cpp
+    src/UI/Window/Window.cpp
 
     # Labs infrastructure
     src/Labs/Bootstrap/LabsBootstrap.cpp

@@ -1,13 +1,16 @@
 #pragma once
 
-#include "Labs/Lab3/Task1/Input.h"
-
 namespace Labs::Lab3::Task1
 {
+    struct Input
+    {
+        float x;
+    };
+
     class UI
     {
-    public:
-        Input ShowInputs();
-        void ShowResult(float x, float result);
+        public:
+            Input ShowInputs();
+            void ShowResult(float x, float result);
     };
 }

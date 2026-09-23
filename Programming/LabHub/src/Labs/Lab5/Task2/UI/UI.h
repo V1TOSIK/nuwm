@@ -1,9 +1,13 @@
 #pragma once
 
-#include "Labs/Lab5/Task2/Input.h"
-
 namespace Labs::Lab5::Task2
 {
+    struct Input
+    {
+        int startNumber;
+        int endNumber;
+    };
+
     class UI
     {
     public:

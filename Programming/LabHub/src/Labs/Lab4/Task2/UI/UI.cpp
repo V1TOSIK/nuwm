@@ -5,32 +5,36 @@
 
 using std::cin;
 using std::cout;
+using std::setprecision;
+using std::setw;
+using std::fixed;
+using std::size_t;
 
 namespace Labs::Lab4::Task2
 {
     Input UI::ShowInputs()
     {
         float zStart, zEnd, dz;
-        cout << "Enter z_start: ";
+        cout << "Введіть z_поч: ";
         cin >> zStart;
-        cout << "Enter z_end: ";
+        cout << "Введіть z_кін: ";
         cin >> zEnd;
-        cout << "Enter dz: ";
+        cout << "Введіть dz: ";
         cin >> dz;
         return {zStart, zEnd, dz};
     }
 
-    void UI::ShowResult(float zStart, float zEnd, float dz, const float* values, int count)
+    void UI::ShowResult(float zStart, float dz, const std::vector<float>& values)
     {
         cout << "\n+------------+------------+\n";
         cout << "|     z      |     w      |\n";
         cout << "+------------+------------+\n";
 
-        for (int i = 0; i < count; ++i)
+        for (size_t i = 0; i < values.size(); ++i)
         {
-            const float z = zStart + i * dz;
-            cout << "| " << std::setw(10) << std::fixed << std::setprecision(4) << z
-                 << " | " << std::setw(10) << std::fixed << std::setprecision(4) << values[i]
+            const float z = zStart + static_cast<float>(i) * dz;
+            cout << "| " << setw(10) << fixed << setprecision(4) << z
+                 << " | " << setw(10) << fixed << setprecision(4) << values[i]
                  << " |\n";
         }
 

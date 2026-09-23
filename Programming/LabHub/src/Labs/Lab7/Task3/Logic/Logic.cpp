@@ -4,7 +4,9 @@ namespace Labs::Lab7::Task3
 {
     Result Logic::Calculate(int size, const double values[7])
     {
-        Result result{0, 0, false};
+        Result result{0, 0, false, size > 0 && size <= 7};
+        if (!result.valid)
+            return result;
 
         for (int i = 0; i < size; ++i)
         {

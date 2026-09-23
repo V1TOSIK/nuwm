@@ -13,6 +13,7 @@ namespace Labs::Lab7::Task4
     struct Result
     {
         std::vector<Employee> employees;
+        bool valid;
     };
 
     class Logic

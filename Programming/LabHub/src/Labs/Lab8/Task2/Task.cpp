@@ -1,18 +1,12 @@
-#include <iostream>
-
 #include "Labs/Lab8/Task2/Task.h"
+
+using std::string;
 
 namespace Labs::Lab8::Task2
 {
     void Task::Execute()
     {
         const auto input = _ui.ShowInputs();
-        if (input.rows <= 0 || input.cols <= 0)
-        {
-            std::cout << "Invalid matrix dimensions.\n";
-            return;
-        }
-
         const auto result = _logic.Calculate(input.rows, input.cols, input.values);
         _ui.ShowResult(result);
     }
@@ -22,8 +16,9 @@ namespace Labs::Lab8::Task2
         return 2;
     }
 
-    std::string Task::Description() const
+    string Task::Description() const
     {
-        return "Find max, min, and range for each column in the matrix.";
+        return "У матриці А(m, n) (m<=5, n<=8) визначити різниці максимального та "
+                "мінімального елементів кожного стовпчика.";
     }
 }

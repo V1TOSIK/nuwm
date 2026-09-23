@@ -1,9 +1,8 @@
 #pragma once
 
-#include <string>
-
 #include "Labs/Abstractions/ITask.h"
 #include "Labs/Lab1/Task3/UI/UI.h"
+#include <string>
 
 namespace Labs::Lab1::Task3
 {

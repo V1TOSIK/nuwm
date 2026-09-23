@@ -1,5 +1,7 @@
 #include "Labs/Lab2/Task1/Task.h"
 
+using std::string;
+
 namespace Labs::Lab2::Task1
 {
     void Task::Execute()
@@ -14,8 +16,9 @@ namespace Labs::Lab2::Task1
         return 1;
     }
 
-    std::string Task::Description() const
+    string Task::Description() const
     {
-        return "Calculate complex expression from task 1.";
+        return "Розробити алгоритм та написати відповідну програму обчислення "
+                "значення арифметичного виразу.";
     }
 }

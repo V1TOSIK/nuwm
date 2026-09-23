@@ -1,13 +1,12 @@
-#include <iostream>
-
 #include "Labs/Lab9/Task2/Task.h"
+
+using std::string;
 
 namespace Labs::Lab9::Task2
 {
     void Task::Execute()
     {
         const auto input = _ui.ShowInputs();
-        std::cout << "\nTensor values entered successfully.\n";
         const auto product = _logic.Calculate(input.tensor);
         _ui.ShowResult(product);
     }
@@ -17,8 +16,8 @@ namespace Labs::Lab9::Task2
         return 2;
     }
 
-    std::string Task::Description() const
+    string Task::Description() const
     {
-        return "Calculate the product of the main diagonal elements of a 3x3x2 tensor.";
+        return "В тензорі T(3х3х2) знайти добуток елементів головної діагоналі. ";
     }
 }

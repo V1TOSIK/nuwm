@@ -1,7 +1,11 @@
 #include "Labs/Lab8/Task1/UI/UI.h"
-
 #include <iomanip>
 #include <iostream>
+
+using std::cin;
+using std::cout;
+using std::fixed;
+using std::setprecision;
 
 namespace Labs::Lab8::Task1
 {
@@ -9,12 +13,12 @@ namespace Labs::Lab8::Task1
     {
         Input input{};
 
-        std::cout << "Enter a 4x4 matrix B:\n";
+        cout << "Введіть матрицю 4x4:\n";
         for (int i = 0; i < 4; ++i)
         {
             for (int j = 0; j < 4; ++j)
             {
-                std::cin >> input.values[i][j];
+                cin >> input.values[i][j];
             }
         }
 
@@ -23,22 +27,22 @@ namespace Labs::Lab8::Task1
 
     void UI::ShowResult(double sumAbove, double sumBelow)
     {
-        std::cout << std::fixed << std::setprecision(2);
-        std::cout << "\nResults:\n";
-        std::cout << "Sum above main diagonal: " << sumAbove << "\n";
-        std::cout << "Sum below main diagonal: " << sumBelow << "\n";
+        cout << fixed << setprecision(2);
+        cout << "\nРезультати:\n";
+        cout << "Сума вище головної діагоналі: " << sumAbove << "\n";
+        cout << "Сума нижче головної діагоналі: " << sumBelow << "\n";
 
         if (sumAbove > sumBelow)
         {
-            std::cout << "Conclusion: sum above the main diagonal is greater.\n";
+            cout << "Висновок: сума вище головнаї діагоналі є більшою.\n";
         }
         else if (sumBelow > sumAbove)
         {
-            std::cout << "Conclusion: sum below the main diagonal is greater.\n";
+            cout << "Висновок: сума нижче головнаї діагоналі є більшою.\n";
         }
         else
         {
-            std::cout << "Conclusion: sums are equal.\n";
+            cout << "Висновок: сума вище і нижче головної діагоналі однакова.\n";
         }
     }
 }

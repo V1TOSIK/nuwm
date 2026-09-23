@@ -1,7 +1,12 @@
 #include "Labs/Lab9/Task1/UI/UI.h"
-
 #include <iomanip>
 #include <iostream>
+
+using std::cin;
+using std::cout;
+using std::fixed;
+using std::setprecision;
+using std::vector;
 
 namespace Labs::Lab9::Task1
 {
@@ -9,34 +14,44 @@ namespace Labs::Lab9::Task1
     {
         Input input{};
 
-        std::cout << "Enter the number of companies M: ";
-        std::cin >> input.firmsCount;
-        std::cout << "Enter the number of months N: ";
-        std::cin >> input.monthsCount;
+        cout << "Введіть кількість компаній M: ";
+        cin >> input.firmsCount;
+        cout << "Введіть кількість місяців N: ";
+        cin >> input.monthsCount;
 
-        std::cout << "Enter profit values for each company month by month:\n";
+        if (input.firmsCount <= 0 ||
+            input.monthsCount <= 0 ||
+            input.firmsCount > 50 ||
+            input.monthsCount > 50)
+        {
+            cout << "Помилка: Невірні вхідні дані.\n";
+            return input;
+        }
+
+        
+        cout << "Введіть прибуток за кожен місяць для компаній:\n";
         for (int firm = 0; firm < input.firmsCount; ++firm)
         {
-            std::cout << "Company #" << (firm + 1) << " (" << input.monthsCount << " values): ";
+            cout << "Компанія #" << (firm + 1) << " (" << input.monthsCount << " ): ";
             for (int month = 0; month < input.monthsCount; ++month)
             {
-                std::cin >> input.profits[firm][month];
+                cin >> input.profits[firm][month];
             }
         }
 
         return input;
     }
 
-    void UI::ShowResult(const std::vector<Result>& result)
+    void UI::ShowResult(const vector<Result>& result)
     {
-        std::cout << std::fixed << std::setprecision(2);
-        std::cout << "\nResults (largest profit for each month):\n";
+        cout << fixed << setprecision(2);
+        cout << "\nРезультат (найбільший прибуток за кожен місяць):\n";
 
         for (const auto& entry : result)
         {
-            std::cout << "Month #" << entry.month
-                      << " -> Largest profit: " << entry.maxProfit
-                      << " (Company #" << entry.bestFirm << ")\n";
+            cout << "Місяць #" << entry.month
+                      << " -> Найбільший прибуток: " << entry.maxProfit
+                      << " (Компанія #" << entry.bestFirm << ")\n";
         }
     }
 }

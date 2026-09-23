@@ -1,5 +1,6 @@
 #include "Labs/Lab1/Task3/Task.h"
-#include "Labs/Lab1/Task3/UI/UI.h"
+
+using std::string;
 
 namespace Labs::Lab1::Task3
 {
@@ -12,8 +13,10 @@ namespace Labs::Lab1::Task3
         return 3;
     }
 
-    std::string Task::Description() const
+    string Task::Description() const
     {
-        return "coming soon...";
+        return "У поданих нижче варіантах наведено представлення чисел в пам’яті "
+                "ПК. Відтворити математичний запис числа з однією значущою цифрою "
+                "до коми. ";
     }
 }

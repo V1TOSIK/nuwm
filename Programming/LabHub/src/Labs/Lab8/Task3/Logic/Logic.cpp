@@ -1,12 +1,14 @@
 #include "Labs/Lab8/Task3/Logic/Logic.h"
-
 #include <cmath>
+
+using std::vector;
+using std::sqrt;
 
 namespace Labs::Lab8::Task3
 {
-    std::vector<VectorLength> Logic::Calculate(int vectorsCount, int dimension, const double values[6][20])
+    vector<VectorLength> Logic::Calculate(int vectorsCount, int dimension, const double values[6][20])
     {
-        std::vector<VectorLength> result;
+        vector<VectorLength> result;
         result.reserve(static_cast<size_t>(vectorsCount));
 
         for (int i = 0; i < vectorsCount; ++i)
@@ -17,7 +19,7 @@ namespace Labs::Lab8::Task3
                 sumSquares += values[i][j] * values[i][j];
             }
 
-            result.push_back(VectorLength{i + 1, std::sqrt(sumSquares)});
+            result.push_back(VectorLength{i + 1, sqrt(sumSquares)});
         }
 
         return result;

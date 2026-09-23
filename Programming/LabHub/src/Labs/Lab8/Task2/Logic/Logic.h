@@ -13,7 +13,7 @@ namespace Labs::Lab8::Task2
 
     class Logic
     {
-    public:
-        std::vector<ColumnRange> Calculate(int rows, int cols, const double values[5][8]);
+        public:
+            std::vector<ColumnRange> Calculate(int rows, int cols, const double values[5][8]);
     };
 }

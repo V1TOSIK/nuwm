@@ -1,5 +1,5 @@
+#define M_PI 3.14159265
 #include "Labs/Lab2/Task1/Logic/Logic.h"
-
 #include <cmath>
 
 using std::abs;

@@ -1,7 +1,12 @@
 #include "Labs/Lab8/Task3/UI/UI.h"
-
 #include <iomanip>
 #include <iostream>
+
+using std::cin;
+using std::cout;
+using std::fixed;
+using std::setprecision;
+using std::vector;
 
 namespace Labs::Lab8::Task3
 {
@@ -9,10 +14,10 @@ namespace Labs::Lab8::Task3
     {
         Input input{};
 
-        std::cout << "Enter number of vectors m (1..6): ";
-        std::cin >> input.vectorsCount;
-        std::cout << "Enter vector dimension n: ";
-        std::cin >> input.dimension;
+        cout << "Введіть кількість векторів m (1..6): ";
+        cin >> input.vectorsCount;
+        cout << "Введіть вимір векторів n: ";
+        cin >> input.dimension;
 
         if (input.vectorsCount < 1 || input.vectorsCount > 6 || input.dimension < 1 || input.dimension > 20)
         {
@@ -21,30 +26,30 @@ namespace Labs::Lab8::Task3
             return input;
         }
 
-        std::cout << "Enter coordinates for each vector:\n";
+        cout << "Введіть координати для кожного вектора:\n";
         for (int i = 0; i < input.vectorsCount; ++i)
         {
-            std::cout << "Vector #" << (i + 1) << ": ";
+            cout << "Вектор #" << (i + 1) << ": ";
             for (int j = 0; j < input.dimension; ++j)
             {
-                std::cin >> input.values[i][j];
+                cin >> input.values[i][j];
             }
         }
 
         return input;
     }
 
-    void UI::ShowResult(const std::vector<VectorLength>& lengths)
+    void UI::ShowResult(const vector<VectorLength>& lengths)
     {
-        std::cout << std::fixed << std::setprecision(3);
-        std::cout << "\nVector lengths:\n";
+        cout << fixed << setprecision(3);
+        cout << "\nДовжини векторів:\n";
 
         double minLength = lengths.front().length;
         int minIndex = lengths.front().index;
 
         for (const auto& length : lengths)
         {
-            std::cout << "Vector #" << length.index << ": " << length.length << "\n";
+            cout << "Вектор #" << length.index << ": " << length.length << "\n";
             if (length.length < minLength)
             {
                 minLength = length.length;
@@ -52,6 +57,6 @@ namespace Labs::Lab8::Task3
             }
         }
 
-        std::cout << "\nVector with minimum length: #" << minIndex << " (length = " << minLength << ")\n";
+        cout << "\nВектор з мінімальною довжиною: #" << minIndex << " (довжина = " << minLength << ")\n";
     }
 }

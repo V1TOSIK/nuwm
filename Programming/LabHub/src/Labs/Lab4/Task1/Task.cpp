@@ -1,22 +1,14 @@
 #include "Labs/Lab4/Task1/Task.h"
 
-#include <vector>
+using std::string;
 
 namespace Labs::Lab4::Task1
 {
     void Task::Execute()
     {
-        auto input = _ui.ShowInputs();
-
-        const int count = static_cast<int>((input.xEnd - input.xStart) / input.dx) + 1;
-        std::vector<float> values(static_cast<size_t>(count));
-
-        for (int i = 0; i < count; ++i)
-        {
-            values[static_cast<size_t>(i)] = _logic.CalculateFunction(input.xStart + i * input.dx);
-        }
-
-        _ui.ShowResult(input.xStart, input.xEnd, input.dx, input.n, values.data(), count);
+        const auto input = _ui.ShowInputs();
+        const auto result = _logic.Calculate(input.xStart, input.xEnd, input.dx);
+        _ui.ShowResult(input.xStart, input.xEnd, input.dx, input.n, result.values);
     }
 
     short Task::Number() const
@@ -24,8 +16,10 @@ namespace Labs::Lab4::Task1
         return 1;
     }
 
-    std::string Task::Description() const
+    string Task::Description() const
     {
-        return "Tabulate the function and display values.";
+        return "Розробити алгоритм та написати програму обчислення значення "
+                "аргументу функції на вказаному проміжку із заданим кроком, а також "
+                "значень функції (табулювання функції), починаючи із заданої точки. ";
     }
 }

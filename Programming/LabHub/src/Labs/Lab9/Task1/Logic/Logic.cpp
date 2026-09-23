@@ -1,10 +1,12 @@
 #include "Labs/Lab9/Task1/Logic/Logic.h"
 
+using std::vector;
+
 namespace Labs::Lab9::Task1
 {
-    std::vector<Result> Logic::Calculate(int firmsCount, int monthsCount, const double profits[50][50])
+    vector<Result> Logic::Calculate(int firmsCount, int monthsCount, const double profits[50][50])
     {
-        std::vector<Result> results;
+        vector<Result> results;
         results.reserve(static_cast<size_t>(monthsCount));
 
         for (int month = 0; month < monthsCount; ++month)

@@ -1,9 +1,13 @@
 #pragma once
 
-#include "Labs/Lab6/Task3/Input.h"
-
 namespace Labs::Lab6::Task3
 {
+    struct Input
+    {
+        double x;
+        double eps;
+    };
+
     class UI
     {
     public:

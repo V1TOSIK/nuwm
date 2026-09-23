@@ -1,20 +1,14 @@
 #include "Labs/Lab7/Task4/Task.h"
 
-#include <iostream>
+using std::string;
 
 namespace Labs::Lab7::Task4
 {
     void Task::Execute()
     {
         const auto input = _ui.ShowInputs();
-        if (input.count <= 0)
-        {
-            std::cout << "Invalid salary count.\n";
-            return;
-        }
-
         const auto result = _logic.Calculate(input.count, input.salaries, input.threshold);
-        _ui.ShowResult(result.employees, input.threshold);
+        _ui.ShowResult(result.employees, input.threshold, result.valid);
     }
 
     short Task::Number() const
@@ -22,8 +16,10 @@ namespace Labs::Lab7::Task4
         return 4;
     }
 
-    std::string Task::Description() const
+    string Task::Description() const
     {
-        return "List employees whose salary is not greater than the limit.";
+        return "Дані про заробітну плату N працівників зберігаються в масиві M(N). "
+                "Визначити номери та зарплати тих працівників, зарплата яких не "
+                "перевищує заданої Mo.";
     }
 }

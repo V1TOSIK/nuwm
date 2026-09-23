@@ -1,9 +1,12 @@
 #pragma once
 
-#include "Labs/Lab7/Task2/Input.h"
-
 namespace Labs::Lab7::Task2
 {
+    struct Input
+    {
+        double values[7];
+    };
+
     class UI
     {
     public:

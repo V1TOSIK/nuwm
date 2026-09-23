@@ -1,9 +1,15 @@
 #pragma once
 
-#include "Labs/Lab5/Task1/Input.h"
-
 namespace Labs::Lab5::Task1
 {
+    struct Input
+    {
+        int kStart;
+        int kEnd;
+        int m;
+        int n;
+    };
+
     class UI
     {
     public:

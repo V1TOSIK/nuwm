@@ -1,6 +1,7 @@
-#include "UI/ConsoleUI.h"
-#include "Labs/Registry/LabRegistry.h"
 #include "Labs/Bootstrap/LabsBootstrap.h"
+#include "Labs/Registry/LabRegistry.h"
+
+#include "UI/Bootstrap/UIBootstrap.h"
 
 int main()
 {
@@ -8,6 +9,9 @@ int main()
 
     Labs::Bootstrap::RegisterLabs(registry);
 
-    ConsoleUI consoleUI(registry);
-    consoleUI.Run();
+    UI::Bootstrap::UIBootstrap uiBootstrap(registry);
+
+    uiBootstrap.GetUI().Run();
+
+    return 0;
 }

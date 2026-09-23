@@ -12,7 +12,7 @@ namespace Labs::Lab8::Task3
 
     class Logic
     {
-    public:
-        std::vector<VectorLength> Calculate(int vectorsCount, int dimension, const double values[6][20]);
+        public:
+            std::vector<VectorLength> Calculate(int vectorsCount, int dimension, const double values[6][20]);
     };
 }

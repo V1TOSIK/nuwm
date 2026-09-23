@@ -1,5 +1,7 @@
 #include "Labs/Lab2/Task2/Task.h"
 
+using std::string;
+
 namespace Labs::Lab2::Task2
 {
     void Task::Execute()
@@ -14,8 +16,9 @@ namespace Labs::Lab2::Task2
         return 2;
     }
 
-    std::string Task::Description() const
+    string Task::Description() const
     {
-        return "Validate a triangle and calculate its perimeter.";
+        return "Дано три числа А, В, С, які задають сторони трикутника. Визначити "
+                "периметр трикутника.";
     }
 }

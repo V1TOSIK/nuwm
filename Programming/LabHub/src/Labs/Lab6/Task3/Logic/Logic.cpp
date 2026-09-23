@@ -2,6 +2,9 @@
 
 #include <cmath>
 
+using std::abs;
+using std::sinh;
+
 namespace Labs::Lab6::Task3
 {
     SumCalculationResult Logic::CalculateSum(double x, double eps)
@@ -12,7 +15,7 @@ namespace Labs::Lab6::Task3
         double sum = 0.0;
         int k = 1;
 
-        while (std::abs(aK) > eps)
+        while (abs(aK) > eps)
         {
             sum += aK;
             aK = aK * (x * x) / (2.0 * k * (2.0 * k + 1.0));
@@ -27,6 +30,6 @@ namespace Labs::Lab6::Task3
 
     double Logic::CalculateCheck(double x)
     {
-        return std::sinh(x);
+        return sinh(x);
     }
 }

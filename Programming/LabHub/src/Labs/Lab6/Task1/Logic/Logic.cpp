@@ -2,6 +2,9 @@
 
 #include <cmath>
 
+using std::abs;
+using std::pow;
+
 namespace Labs::Lab6::Task1
 {
     RootCalculationResult Logic::CalculateRoot(double x, int n, double eps)
@@ -19,8 +22,8 @@ namespace Labs::Lab6::Task1
 
         do
         {
-            yNext = (1.0 / static_cast<double>(n)) * (x / std::pow(yCurr, n - 1) + (n - 1) * yCurr);
-            diff = std::abs(yNext - yCurr);
+            yNext = (1.0 / static_cast<double>(n)) * (x / pow(yCurr, n - 1) + (n - 1) * yCurr);
+            diff = abs(yNext - yCurr);
             yCurr = yNext;
             ++result.iterations;
         }
@@ -32,6 +35,6 @@ namespace Labs::Lab6::Task1
 
     double Logic::CalculateCheck(double x, int n)
     {
-        return std::pow(x, 1.0 / static_cast<double>(n));
+        return pow(x, 1.0 / static_cast<double>(n));
     }
 }

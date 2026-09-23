@@ -2,6 +2,9 @@
 
 #include <cmath>
 
+using std::abs;
+using std::pow;
+
 namespace Labs::Lab5::Task3
 {
     double Logic::CalculateSum(double z1, double deltaZ)
@@ -14,13 +17,13 @@ namespace Labs::Lab5::Task3
             const double zCurr = zPrev * n - deltaZ;
             const double denominator = zPrev + zCurr;
 
-            if (std::abs(denominator) < 1e-12)
+            if (abs(denominator) < 1e-12)
             {
                 zPrev = zCurr;
                 continue;
             }
 
-            const double numerator = std::pow(zPrev, 3.0) - std::pow(zCurr, 2.0);
+            const double numerator = pow(zPrev, 3.0) - pow(zCurr, 2.0);
             result += numerator / denominator;
             zPrev = zCurr;
         }

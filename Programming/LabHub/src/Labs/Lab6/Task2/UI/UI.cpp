@@ -3,30 +3,32 @@
 #include <iomanip>
 #include <iostream>
 
+using std::cin;
+using std::cout;
+using std::fixed;
+using std::setprecision;
+
 namespace Labs::Lab6::Task2
 {
     Input UI::ShowInputs()
     {
         Input input{};
 
-        std::cout << "Enter the initial approximation x0: ";
-        std::cin >> input.x0;
-        std::cout << "Enter the precision eps: ";
-        std::cin >> input.eps;
+        cout << "Введіть початкове наближення x0: ";
+        cin >> input.x0;
+        cout << "Введіть точність eps: ";
+        cin >> input.eps;
 
         return input;
     }
 
-    void UI::ShowResult(double root, int iterations)
+    void UI::ShowResult(const Result& result)
     {
-        std::cout << std::fixed << std::setprecision(6);
-        std::cout << "\nCalculated root: " << root << "\n";
-        std::cout << "Iterations: " << iterations << "\n";
-    }
+        cout << fixed << setprecision(6);
+        if (result.usedConvergentFormula)
+            cout << "\nПряма формула розбіглася. Використовується еквівалентне збіжне перетворення.\n";
 
-    void UI::ShowConvergentResult(double root, int iterations)
-    {
-        std::cout << "\nThe direct formula diverged. Using the equivalent convergent transformation.\n";
-        ShowResult(root, iterations);
+        cout << "\nОбчислений корінь: " << result.root << "\n";
+        cout << "Ітерації: " << result.iterations << "\n";
     }
 }

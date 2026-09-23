@@ -12,7 +12,7 @@ using std::exp;
 
 namespace Labs::Lab1::Task1
 {
-    float Logic::CalculateR(float x, float k) {
+    float Logic::Calculate(float x, float k) {
         float ctg_arg = (x + k) / (k + 1.0f);
         float numerator = (1.0f / tan(ctg_arg)) - sqrt(abs(log(x) - log(k) + 1.3f));
     

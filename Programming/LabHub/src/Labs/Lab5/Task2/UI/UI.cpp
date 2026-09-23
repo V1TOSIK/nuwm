@@ -3,20 +3,24 @@
 #include <iostream>
 #include <utility>
 
+using std::cin;
+using std::cout;
+using std::swap;
+
 namespace Labs::Lab5::Task2
 {
     Input UI::ShowInputs()
     {
         Input input{};
 
-        std::cout << "Enter the range start: ";
-        std::cin >> input.startNumber;
-        std::cout << "Enter the range end: ";
-        std::cin >> input.endNumber;
+        cout << "Введіть початок діапазону: ";
+        cin >> input.startNumber;
+        cout << "Введіть кінець діапазону: ";
+        cin >> input.endNumber;
 
         if (input.startNumber > input.endNumber)
         {
-            std::swap(input.startNumber, input.endNumber);
+            swap(input.startNumber, input.endNumber);
         }
 
         return input;
@@ -24,8 +28,8 @@ namespace Labs::Lab5::Task2
 
     void UI::ShowResult(int startNumber, int endNumber, unsigned long long product)
     {
-        std::cout << "\n--- Result ---\n";
-        std::cout << "Range: [" << startNumber << ", " << endNumber << "]\n";
-        std::cout << "Product of odd numbers = " << product << '\n';
+        cout << "\n--- Результат ---\n";
+        cout << "Діапазон: [" << startNumber << ", " << endNumber << "]\n";
+        cout << "Добуток непарних чисел = " << product << '\n';
     }
 }

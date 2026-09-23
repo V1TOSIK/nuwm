@@ -1,5 +1,7 @@
 #include "Labs/Lab6/Task1/Task.h"
 
+using std::string;
+
 namespace Labs::Lab6::Task1
 {
     void Task::Execute()
@@ -14,8 +16,9 @@ namespace Labs::Lab6::Task1
         return 1;
     }
 
-    std::string Task::Description() const
+    string Task::Description() const
     {
-        return "Approximate the n-th root by the fixed-point iteration method.";
+        return "Розробити алгоритм та записати програму для обчислення значення"
+                "кореня n-го степеня";
     }
 }

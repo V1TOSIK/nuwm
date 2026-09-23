@@ -1,5 +1,4 @@
 #include "Labs/Lab1/Task2/UI/UI.h"
-#include "Labs/Lab1/Task2/Input.h"
 #include <iostream>
 
 using std::cin;
@@ -11,13 +10,13 @@ namespace Labs::Lab1::Task2
         float x, c;
         cout << "x = ";
         cin >> x;
-        cout << "\nc = ";
+        cout << "c = ";
         cin >> c;
         return {x, c};
     }
 
     void UI::ShowResult(float x, float c, bool result) {
-        cout << "x = " << x << '\t'
+        cout << "\nx = " << x << '\t'
                   << "c = " << c << '\n';
         cout << "Result = " << (result ? "true" : "false") << '\n';
     }

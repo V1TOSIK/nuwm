@@ -1,18 +1,12 @@
-#include <iostream>
-
 #include "Labs/Lab8/Task3/Task.h"
+
+using std::string;
 
 namespace Labs::Lab8::Task3
 {
     void Task::Execute()
     {
         const auto input = _ui.ShowInputs();
-        if (input.vectorsCount <= 0 || input.dimension <= 0)
-        {
-            std::cout << "Invalid vector dimensions.\n";
-            return;
-        }
-
         const auto result = _logic.Calculate(input.vectorsCount, input.dimension, input.values);
         _ui.ShowResult(result);
     }
@@ -22,8 +16,10 @@ namespace Labs::Lab8::Task3
         return 3;
     }
 
-    std::string Task::Description() const
+    string Task::Description() const
     {
-        return "Find the vector with the minimum length among all input vectors.";
+        return "Координати m векторів задані матрицею А(m, n) (m<=6). Необхідно "
+                "обчислити довжини цих векторів, роздрукувати їх значення і серед "
+                "них знайти і вказати номер вектора мінімальної довжини";
     }
 }

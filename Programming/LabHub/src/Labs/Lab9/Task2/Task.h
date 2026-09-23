@@ -1,10 +1,9 @@
 #pragma once
 
-#include <string>
-
 #include "Labs/Abstractions/ITask.h"
 #include "Labs/Lab9/Task2/Logic/Logic.h"
 #include "Labs/Lab9/Task2/UI/UI.h"
+#include <string>
 
 namespace Labs::Lab9::Task2
 {

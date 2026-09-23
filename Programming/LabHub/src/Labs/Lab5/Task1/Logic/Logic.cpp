@@ -2,6 +2,8 @@
 
 #include <cmath>
 
+using std::pow;
+
 namespace Labs::Lab5::Task1
 {
     double Logic::CalculateSum(int start, int end)
@@ -25,8 +27,8 @@ namespace Labs::Lab5::Task1
 
         for (int k = start; k <= end; ++k)
         {
-            const double numerator = std::pow(static_cast<double>(k), 3.0);
-            const double denominator = static_cast<double>(k) + std::pow(2.0, static_cast<double>(k));
+            const double numerator = pow(static_cast<double>(k), 3.0);
+            const double denominator = static_cast<double>(k) + pow(2.0, static_cast<double>(k));
             product *= numerator / denominator;
         }
 

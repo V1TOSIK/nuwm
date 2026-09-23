@@ -1,6 +1,4 @@
 #include "Labs/Lab2/Task1/UI/UI.h"
-
-#include <cmath>
 #include <iostream>
 
 using std::cin;
@@ -20,7 +18,7 @@ namespace Labs::Lab2::Task1
 
     void UI::ShowResult(float a, float b, float result)
     {
-        cout << "a = " << a << '\t'
+        cout << "\na = " << a << '\t'
              << "b = " << b << '\n';
         cout << "Result = " << result << '\n';
     }

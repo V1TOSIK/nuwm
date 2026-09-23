@@ -3,14 +3,19 @@
 #include <iomanip>
 #include <iostream>
 
+using std::cin;
+using std::cout;
+using std::fixed;
+using std::setprecision;
+
 namespace Labs::Lab7::Task3
 {
     Input UI::ShowInputs()
     {
         Input input{};
 
-        std::cout << "Enter the array size (1..7): ";
-        std::cin >> input.size;
+        cout << "Введіть розмір масиву (1..7): ";
+        cin >> input.size;
 
         if (input.size < 1 || input.size > 7)
         {
@@ -18,28 +23,34 @@ namespace Labs::Lab7::Task3
             return input;
         }
 
-        std::cout << "Enter " << input.size << " elements (at least one zero is expected):\n";
+        cout << "Введіть " << input.size << " елементів (очікується хоча б один нуль):\n";
         for (int i = 0; i < input.size; ++i)
         {
-            std::cin >> input.values[i];
+            cin >> input.values[i];
         }
 
         return input;
     }
 
-    void UI::ShowResult(int positiveCount, int negativeCount, bool zeroFound)
+    void UI::ShowResult(int positiveCount, int negativeCount, bool zeroFound, bool valid)
     {
-        std::cout << std::fixed << std::setprecision(2);
-        std::cout << "\nResults:\n";
+        if (!valid)
+        {
+            cout << "Некоректний розмір.\n";
+            return;
+        }
+
+        cout << fixed << setprecision(2);
+        cout << "\nРезультати:\n";
 
         if (zeroFound)
         {
-            std::cout << "Positive count before first zero: " << positiveCount << "\n";
-            std::cout << "Negative count before first zero: " << negativeCount << "\n";
+            cout << "Кількість додатних до першого нуля: " << positiveCount << "\n";
+            cout << "Кількість від'ємних до першого нуля: " << negativeCount << "\n";
         }
         else
         {
-            std::cout << "No zero found in the array.\n";
+            cout << "Нуль у масиві не знайдено.\n";
         }
     }
 }

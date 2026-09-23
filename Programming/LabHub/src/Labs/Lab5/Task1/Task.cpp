@@ -1,5 +1,7 @@
 #include "Labs/Lab5/Task1/Task.h"
 
+using std::string;
+
 namespace Labs::Lab5::Task1
 {
     void Task::Execute()
@@ -15,8 +17,8 @@ namespace Labs::Lab5::Task1
         return 1;
     }
 
-    std::string Task::Description() const
+    string Task::Description() const
     {
-        return "Compute the sum and product for the specified ranges.";
+        return "Розробити алгоритм та написати програму обчислення значення суми та добутку.";
     }
 }

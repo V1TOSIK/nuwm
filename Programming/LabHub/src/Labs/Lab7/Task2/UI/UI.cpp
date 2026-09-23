@@ -3,16 +3,21 @@
 #include <iomanip>
 #include <iostream>
 
+using std::cin;
+using std::cout;
+using std::fixed;
+using std::setprecision;
+
 namespace Labs::Lab7::Task2
 {
     Input UI::ShowInputs()
     {
         Input input{};
 
-        std::cout << "Enter 7 elements of array B:\n";
+        cout << "Введіть 7 елементів масиву B:\n";
         for (int i = 0; i < 7; ++i)
         {
-            std::cin >> input.values[i];
+            cin >> input.values[i];
         }
 
         return input;
@@ -20,22 +25,22 @@ namespace Labs::Lab7::Task2
 
     void UI::ShowResult(bool hasSecond, int secondIndex, double secondValue, bool hasFourth, int fourthIndex, double fourthValue)
     {
-        std::cout << std::fixed << std::setprecision(1);
-        std::cout << "\nResults:\n";
+        cout << fixed << setprecision(1);
+        cout << "\nРезультати:\n";
 
         if (hasSecond)
         {
-            std::cout << "2nd negative element: value = " << secondValue << ", position = " << secondIndex << "\n";
+            cout << "2-й від'ємний елемент: значення = " << secondValue << ", позиція = " << secondIndex << "\n";
         }
 
         if (hasFourth)
         {
-            std::cout << "4th negative element: value = " << fourthValue << ", position = " << fourthIndex << "\n";
+            cout << "4-й від'ємний елемент: значення = " << fourthValue << ", позиція = " << fourthIndex << "\n";
         }
 
         if (!hasSecond && !hasFourth)
         {
-            std::cout << "There are fewer than two negative elements.\n";
+            cout << "Від'ємних елементів менше двох.\n";
         }
     }
 }

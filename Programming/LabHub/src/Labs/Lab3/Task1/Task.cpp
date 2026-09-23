@@ -1,5 +1,7 @@
 #include "Labs/Lab3/Task1/Task.h"
 
+using std::string;
+
 namespace Labs::Lab3::Task1
 {
     void Task::Execute()
@@ -14,8 +16,10 @@ namespace Labs::Lab3::Task1
         return 1;
     }
 
-    std::string Task::Description() const
+    string Task::Description() const
     {
-        return "Evaluate the piecewise function from task 1.";
+        return "Розробити алгоритм та написати відповідну програму знаходження "
+                "значення функції, яка обчислюється в залежності від значення "
+                "аргументу. ";
     }
 }

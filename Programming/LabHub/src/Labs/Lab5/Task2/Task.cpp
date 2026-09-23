@@ -1,5 +1,7 @@
 #include "Labs/Lab5/Task2/Task.h"
 
+using std::string;
+
 namespace Labs::Lab5::Task2
 {
     void Task::Execute()
@@ -14,8 +16,8 @@ namespace Labs::Lab5::Task2
         return 2;
     }
 
-    std::string Task::Description() const
+    string Task::Description() const
     {
-        return "Multiply all odd numbers in the specified range.";
+        return "Підрахувати добуток всіх непарних натуральних чисел від 10 до 30";
     }
 }

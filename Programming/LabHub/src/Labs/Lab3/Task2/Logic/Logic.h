@@ -2,16 +2,17 @@
 
 namespace Labs::Lab3::Task2
 {
+    struct Values
+    {
+        float a;
+        float b;
+        float c;
+        bool foundValue;
+    };
+
     class Logic
     {
-    public:
-        struct Values
-        {
-            float a;
-            float b;
-            float c;
-        };
-
-        Values CalculateValues(float k, float l);
+        public:
+            Values CalculateResult(float k, float l);
     };
 }

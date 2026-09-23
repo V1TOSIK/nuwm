@@ -10,7 +10,7 @@ namespace Labs::Lab8::Task1
 
     class Logic
     {
-    public:
-        Result Calculate(const double values[4][4]);
+        public:
+            Result Calculate(const double values[4][4]);
     };
 }
