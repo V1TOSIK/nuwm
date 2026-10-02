@@ -1,5 +1,7 @@
 #pragma once
 
+#include <initializer_list>
+
 namespace Labs::Lab3::Task4
 {
     class Logic
@@ -13,5 +15,9 @@ namespace Labs::Lab3::Task4
         };
 
         Stats CalculateStats(float a, float b, float c);
+        
+    private:
+        float TakeMin(std::initializer_list<float> nums);
     };
+
 }

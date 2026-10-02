@@ -16,11 +16,10 @@ namespace Labs::Lab3::Task3
         return {x, y};
     }
 
-    void UI::ShowResult(float x, float y, float r, bool isInside)
+    void UI::ShowResult(float x, float y, bool isInside)
     {
         cout << "\n--- Введена інформація ---\n";
         cout << "Точка M: (" << x << "; " << y << ")\n";
-        cout << "Радіус R: "<< r << "\n\n";
 
         cout << "--- Результат ---\n";
         if (isInside)

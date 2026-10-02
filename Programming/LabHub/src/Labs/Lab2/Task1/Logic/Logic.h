@@ -2,9 +2,16 @@
 
 namespace Labs::Lab2::Task1
 {
+    struct Result
+    {
+        float x;
+        float y;
+        float z;
+    };
+
     class Logic
     {
     public:
-        float CalculateResult(float a, float b);
+        Result CalculateResult(float a, float b);
     };
 }

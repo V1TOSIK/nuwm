@@ -12,6 +12,6 @@ namespace Labs::Lab3::Task3
     {
         public:
             Input ShowInputs();
-            void ShowResult(float x, float y, float r, bool isInside);
+            void ShowResult(float x, float y, bool isInside);
     };
 }

@@ -1,4 +1,3 @@
-#define CIRCUIT_RADIUS 3.0f
 #include "Labs/Lab3/Task3/Task.h"
 
 using std::string;
@@ -8,8 +7,8 @@ namespace Labs::Lab3::Task3
     void Task::Execute()
     {
         auto input = _ui.ShowInputs();
-        auto isInside = _logic.IsInsideSemiCircle(input.x, input.y, CIRCUIT_RADIUS);
-        _ui.ShowResult(input.x, input.y, CIRCUIT_RADIUS, isInside);
+        auto isInside = _logic.IsInsideSemiCircle(input.x, input.y);
+        _ui.ShowResult(input.x, input.y, isInside);
     }
 
     short Task::Number() const

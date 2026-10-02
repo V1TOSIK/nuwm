@@ -25,7 +25,7 @@ namespace Labs::Lab3::Task1
 
         if (x > 1.0f && x <= 5.5f)
         {
-            return sqrt(abs(log10(x) - log(abs(x))));
+            return sqrt(abs(log10(x) - log(x)));
         }
 
         if (x >= 0.0f && x <= 1.0f)

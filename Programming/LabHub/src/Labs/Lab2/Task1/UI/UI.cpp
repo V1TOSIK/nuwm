@@ -16,10 +16,10 @@ namespace Labs::Lab2::Task1
         return {a, b};
     }
 
-    void UI::ShowResult(float a, float b, float result)
+    void UI::ShowResult(float x, float y, float z)
     {
-        cout << "\na = " << a << '\t'
-             << "b = " << b << '\n';
-        cout << "Result = " << result << '\n';
+        cout << "\nx = " << y << '\t'
+             << "y = " << x << '\n';
+        cout << "Result = " << z << '\n';
     }
 }

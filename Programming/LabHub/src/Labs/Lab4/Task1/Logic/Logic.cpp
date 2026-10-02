@@ -14,12 +14,13 @@ namespace Labs::Lab4::Task1
         Result result;
         const int count = static_cast<int>((xEnd - xStart) / dx) + 1;
         result.values.resize(static_cast<size_t>(count));
-
-        for (int i = 0; i < count; ++i)
+        int i = 0;
+        do
         {
             result.values[static_cast<size_t>(i)] = CalculateFunction(xStart + i * dx);
-        }
-
+            ++i;
+        } while (i < count);
+        i = 0;
         return result;
     }
 

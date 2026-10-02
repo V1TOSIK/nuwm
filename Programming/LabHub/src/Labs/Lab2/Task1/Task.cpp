@@ -8,7 +8,7 @@ namespace Labs::Lab2::Task1
     {
         auto input = _ui.ShowInputs();
         auto result = _logic.CalculateResult(input.a, input.b);
-        _ui.ShowResult(input.a, input.b, result);
+        _ui.ShowResult(result.x, result.y, result.z);
     }
 
     short Task::Number() const
