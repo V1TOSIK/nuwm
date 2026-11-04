@@ -12,5 +12,8 @@ namespace Labs::Lab9::Task2
         public:
             Input ShowInputs();
             void ShowResult(double product);
+
+        private:
+            void FillArray(double tensor[3][3][2]);
     };
 }

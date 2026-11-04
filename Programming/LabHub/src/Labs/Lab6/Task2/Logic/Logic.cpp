@@ -15,7 +15,7 @@ namespace Labs::Lab6::Task2
         double xCurr = x0;
         double xNext = 0.0;
         int iterations = 0;
-        constexpr int maxIterations = 50;
+        const int maxIterations = 50;
 
         while (true)
         {

@@ -17,5 +17,8 @@ namespace Labs::Lab8::Task2
         public:
             Input ShowInputs();
             void ShowResult(const std::vector<ColumnRange>& ranges);
+        
+        private:
+            void FillArray(double matrix[5][8], int rows, int cols);
     };
 }

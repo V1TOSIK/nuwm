@@ -14,17 +14,19 @@ namespace Labs::Lab6::Task3
         double aK = x;
         double sum = 0.0;
         int k = 1;
+        int count = 0;
 
         while (abs(aK) > eps)
         {
             sum += aK;
+            ++count;
+
             aK = aK * (x * x) / (2.0 * k * (2.0 * k + 1.0));
             ++k;
         }
 
-        sum += aK;
         result.sum = sum;
-        result.iterations = k;
+        result.iterations = count;
         return result;
     }
 

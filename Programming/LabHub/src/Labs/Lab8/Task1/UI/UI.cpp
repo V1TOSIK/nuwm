@@ -1,25 +1,45 @@
 #include "Labs/Lab8/Task1/UI/UI.h"
 #include <iomanip>
 #include <iostream>
+#include <random>
 
-using std::cin;
 using std::cout;
 using std::fixed;
 using std::setprecision;
+using std::setw;
 
 namespace Labs::Lab8::Task1
 {
-    Input UI::ShowInputs()
+    void UI::FillArray(double matrix[4][4])
     {
-        Input input{};
+        std::random_device rd;
+        std::mt19937 gen(rd());
+        std::uniform_real_distribution<double> dist(-50.0, 50.0);
 
-        cout << "Введіть матрицю 4x4:\n";
         for (int i = 0; i < 4; ++i)
         {
             for (int j = 0; j < 4; ++j)
             {
-                cin >> input.values[i][j];
+                matrix[i][j] = dist(gen);
             }
+        }
+    }
+
+    Input UI::ShowInputs()
+    {
+        Input input{};
+
+        FillArray(input.values);
+
+        cout << fixed << setprecision(2);
+        cout << "Згенерована матриця 4x4:\n";
+        for (int i = 0; i < 4; ++i)
+        {
+            for (int j = 0; j < 4; ++j)
+            {
+                cout << setw(8) << input.values[i][j] << " ";
+            }
+            cout << "\n";
         }
 
         return input;

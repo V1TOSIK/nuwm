@@ -12,5 +12,8 @@ namespace Labs::Lab8::Task1
         public:
             Input ShowInputs();
             void ShowResult(double sumAbove, double sumBelow);
+
+        private:
+            void FillArray(double matrix[4][4]);
     };
 }

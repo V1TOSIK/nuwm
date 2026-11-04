@@ -7,9 +7,12 @@ namespace Labs::Lab9::Task2
         const int diagLength = 2;
         double product = 1.0;
 
-        for (int index = 0; index < diagLength; ++index)
+        for (int indexI = 0; indexI < 3; ++indexI)
         {
-            product *= tensor[index][index][index];
+            for (int index = 0; index < diagLength; ++index)
+            {
+                product *= tensor[indexI][index][index];
+            }
         }
 
         return product;

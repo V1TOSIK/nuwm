@@ -17,5 +17,8 @@ namespace Labs::Lab8::Task3
         public:
             Input ShowInputs();
             void ShowResult(const std::vector<VectorLength>& lengths);
+
+        private:
+            void FillArray(double matrix[6][20], int count, int dim);
     };
 }

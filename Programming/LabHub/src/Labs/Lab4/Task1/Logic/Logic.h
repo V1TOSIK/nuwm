@@ -13,7 +13,7 @@ namespace Labs::Lab4::Task1
     class Logic
     {
         public:
-            Result Calculate(float xStart, float xEnd, float dx, int n);
+            Result Calculate(float xStart, float xEnd, float dx);
         private:
             float CalculateFunction(float x);
     };
