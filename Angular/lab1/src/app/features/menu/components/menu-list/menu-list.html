@@ -1,0 +1,12 @@
+<div>
+    @if (list().length === 0) {
+        <p>No drinks available.</p>
+    } @else {
+        @for (drink of list(); track drink.id) {
+        <app-drink-card
+            [drink]="drink"
+            (added)="onDrinkAdded($event)">
+        </app-drink-card>
+        }
+    }
+</div>

@@ -1,0 +1,11 @@
+<div>
+  <button (click)="onCategorySelected('all')">
+    Усе
+  </button>
+
+  @for (category of categories; track category) {
+    <button (click)="onCategorySelected(category)">
+      {{ categoryLabels[category] }}
+    </button>
+  }
+</div>
