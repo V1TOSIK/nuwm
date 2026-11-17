@@ -1,0 +1,23 @@
+<div>
+     <button
+          [disabled]="progress() >= 100"
+          (click)="increaseProgress(10)"
+     >
+          Increase Progress
+     </button>
+
+     <button
+          [disabled]="progress() <= 0"
+          (click)="decreaseProgress(10)"
+     >
+          Decrease Progress
+     </button>
+
+     <div class="progress-container">
+          <div
+               class="progress-fill"
+               [style.width.%]="progress()"
+               [class.green-fill]="progress() === 100">
+          </div>
+     </div>
+</div>
