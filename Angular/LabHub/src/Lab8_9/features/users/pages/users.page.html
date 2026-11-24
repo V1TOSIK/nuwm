@@ -1,0 +1,62 @@
+<section class="users-page">
+  <header class="page-header">
+    <div>
+      <h1>Користувачі</h1>
+      <p>Довідник користувачів із JSONPlaceholder</p>
+    </div>
+
+    <span class="users-count">
+      {{ filteredUsers().length }} користувачів
+    </span>
+  </header>
+
+  <input
+    class="search-input"
+    type="search"
+    placeholder="Пошук користувача..."
+    [value]="searchQuery()"
+    (input)="onSearch($any($event.target).value)"
+  />
+
+  @if (usersState().status === 'loading') {
+    <div class="state-message">
+      Завантаження користувачів...
+    </div>
+  }
+
+  @if (usersState().status === 'error') {
+    <div class="state-message error">
+      <p>Не вдалося завантажити користувачів.</p>
+      <button (click)="retry()">Спробувати ще раз</button>
+    </div>
+  }
+
+  @if (usersState().status === 'success') {
+    @if (filteredUsers().length === 0) {
+      <div class="state-message">
+        Користувачів не знайдено.
+      </div>
+    } @else {
+      <div class="users-grid">
+        @for (user of filteredUsers(); track user.id) {
+          <article class="user-card">
+            <div class="user-avatar">
+              {{ user.name.charAt(0) }}
+            </div>
+
+            <div class="user-info">
+              <h3>{{ user.name }}</h3>
+              <p>{{ user.email }}</p>
+              <span>{{ user.company }}</span>
+              <small>{{ user.city }}</small>
+            </div>
+
+            <button (click)="openUser(user.id)">
+              Детальніше
+            </button>
+          </article>
+        }
+      </div>
+    }
+  }
+</section>

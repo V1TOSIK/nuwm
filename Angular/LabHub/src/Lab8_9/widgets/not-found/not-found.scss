@@ -1,0 +1,17 @@
+.not-found {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 96px;
+    color: #2563eb;
+}
+
+a {
+    margin-top: 20px;
+    color: #2563eb;
+}

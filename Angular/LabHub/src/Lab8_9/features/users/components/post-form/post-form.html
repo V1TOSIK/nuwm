@@ -1,0 +1,28 @@
+<form class="post-form" (ngSubmit)="submit()">
+  <h3>Створити пост</h3>
+
+  <input
+    type="text"
+    name="title"
+    placeholder="Заголовок"
+    [ngModel]="title()"
+    (ngModelChange)="title.set($event)"
+    required
+  />
+
+  <textarea
+    name="body"
+    placeholder="Текст поста"
+    [ngModel]="body()"
+    (ngModelChange)="body.set($event)"
+    required
+    rows="4"
+  ></textarea>
+
+  <button
+    type="submit"
+    [disabled]="!title().trim() || !body().trim()"
+  >
+    Опублікувати
+  </button>
+</form>

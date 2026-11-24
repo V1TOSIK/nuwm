@@ -1,0 +1,52 @@
+<section class="user-page">
+  <button class="back-button" (click)="goBack()">
+    ← Назад до користувачів
+  </button>
+
+  @if (userState().status === 'loading') {
+    <div class="state-message">
+      Завантаження користувача...
+    </div>
+  }
+
+  @if (userState().status === 'error') {
+    <div class="state-message error">
+      Не вдалося завантажити користувача.
+    </div>
+  }
+
+  @if (userState().status === 'success' && userState().data; as user) {
+    <header class="user-header">
+      <div class="user-avatar">
+        {{ user.name.charAt(0) }}
+      </div>
+
+      <div>
+        <h1>{{ user.name }}</h1>
+        <p>{{ user.email }}</p>
+        <p>{{ user.company }} · {{ user.city }}</p>
+      </div>
+    </header>
+
+    <div class="posts-section">
+      <h2>Пости користувача</h2>
+
+      @if (posts().length === 0) {
+        <p class="empty-message">Постів поки немає.</p>
+      } @else {
+        <div class="posts-list">
+          @for (post of posts(); track $index) {
+            <article class="post-card">
+              <h3>{{ post.title }}</h3>
+              <p>{{ post.body }}</p>
+            </article>
+          }
+        </div>
+      }
+
+      <app-post-form
+        (submitted)="createPost($event)"
+      />
+    </div>
+  }
+</section>

@@ -1,0 +1,47 @@
+<header class="header">
+  <a class="logo" [routerLink]="LAB89_ROUTES.USERS">
+    User Directory
+  </a>
+
+  <nav>
+    <a
+      [routerLink]="LAB89_ROUTES.USERS"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+    >
+      Користувачі
+    </a>
+
+    <a
+      [routerLink]="LAB89_ROUTES.ABOUT"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+    >
+      Про застосунок
+    </a>
+
+    @if (auth.isAdmin()) {
+      <a
+        [routerLink]="LAB89_ROUTES.ADMIN"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+      >
+        Адміністрування
+      </a>
+    }
+  </nav>
+
+  @if (auth.isAuthenticated()) {
+    <button class="logout-button" (click)="logout()">
+      Вийти
+    </button>
+  } @else {
+    <a [routerLink]="LAB89_ROUTES.LOGIN">Увійти</a>
+  }
+</header>
+
+<main>
+  <router-outlet />
+</main>
+
+<app-user-notifications />

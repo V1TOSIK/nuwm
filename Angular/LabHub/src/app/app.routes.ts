@@ -6,7 +6,8 @@ export const routes: Routes = [
     path: 'labs',
     children: LABS.map(lab => ({
       path: lab.path,
-      component: lab.component
-    }))
-  }
+      component: lab.component,
+      ...('children' in lab ? { children: lab.children } : {}),
+    })),
+  },
 ];

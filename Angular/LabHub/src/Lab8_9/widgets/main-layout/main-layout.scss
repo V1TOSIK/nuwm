@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 16px 32px;
+    border-bottom: 1px solid #e5e5e5;
+    background: white;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+}
+
+nav a,
+.header > a {
+    color: #555;
+    text-decoration: none;
+}
+
+nav a.active {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.logout-button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #dc2626;
+    color: white;
+    cursor: pointer;
+}
