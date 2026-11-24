@@ -1,0 +1,31 @@
+
+.booking {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  button {
+    align-self: flex-start;
+    padding: 12px 20px;
+    border: 0;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.status {
+  color: #888;
+}

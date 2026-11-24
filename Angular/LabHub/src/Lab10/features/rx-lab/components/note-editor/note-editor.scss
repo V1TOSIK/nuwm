@@ -1,0 +1,35 @@
+
+.note-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font: inherit;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+}
+
+.error {
+  margin: 0;
+  color: #dc3545;
+}
+
+.save-status {
+  color: #888;
+  font-size: 14px;
+}

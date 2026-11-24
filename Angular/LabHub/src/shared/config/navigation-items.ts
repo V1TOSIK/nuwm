@@ -6,7 +6,7 @@ import { Lab6Page } from '@/Lab6/pages/lab6.page';
 import { Lab7Page } from '@/Lab7/pages/lab7.page';
 import { Lab8_9Page } from '@/Lab8_9/pages/lab8_9.page';
 import { lab89Routes } from '@/Lab8_9/app.routes';
-// import { Lab10Page } from '@/Lab10/pages/lab10.page';
+import { RxLabPage } from '@/Lab10/features/rx-lab/pages/rx-lab.page';
 
 export const LABS = [
   {
@@ -40,14 +40,9 @@ export const LABS = [
     component: Lab8_9Page,
     children: lab89Routes
   },
-  // {
-  //   path: ROUTE_PATHS.LAB9,
-  //   label: 'Lab 9',
-  //   component: Lab9Page
-  // },
-  // {
-  //   path: ROUTE_PATHS.LAB10,
-  //   label: 'Lab 10',
-  //   component: Lab10Page
-  // },
+  {
+    path: ROUTE_PATHS.LAB10,
+    label: 'Lab 10',
+    component: RxLabPage,
+  }
 ] as const;

@@ -1,0 +1,23 @@
+
+<section class="booking">
+  <h2>Бронювання</h2>
+
+  <button
+    type="button"
+    (click)="book()"
+    [disabled]="isBooking()"
+  >
+    {{ isBooking() ? 'Бронювання...' : 'Забронювати' }}
+  </button>
+
+  <div class="stats">
+    <p>Кількість кліків: {{ clicks() }}</p>
+    <p>Успішних бронювань: {{ successfulBookings() }}</p>
+  </div>
+
+  @if (isBooking()) {
+    <p class="status">Виконується бронювання...</p>
+  } @else {
+    <p class="status">Можна бронювати</p>
+  }
+</section>

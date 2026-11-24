@@ -1,0 +1,24 @@
+
+.rx-lab {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+}
+
+.page-header {
+  h1 {
+    margin: 0 0 8px;
+  }
+
+  p {
+    margin: 0;
+    color: #888;
+  }
+}
+
+.lab-section {
+  padding: 24px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}

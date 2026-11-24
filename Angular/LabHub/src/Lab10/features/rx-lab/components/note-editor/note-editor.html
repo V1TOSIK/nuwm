@@ -1,0 +1,36 @@
+
+<section class="note-editor">
+  <h2>Нотатка з автозбереженням</h2>
+
+  <form [formGroup]="form">
+    <label for="note-title">Заголовок</label>
+    <input
+      id="note-title"
+      type="text"
+      formControlName="title"
+      placeholder="Назва нотатки"
+    />
+
+    @if (form.controls.title.invalid && form.controls.title.touched) {
+      <p class="error">Заголовок обов'язковий</p>
+    }
+
+    <label for="note-text">Текст</label>
+    <textarea
+      id="note-text"
+      formControlName="text"
+      rows="5"
+      placeholder="Введіть текст нотатки..."
+    ></textarea>
+  </form>
+
+  <div class="save-status">
+    @if (status() === 'saving') {
+      <span>Збереження...</span>
+    } @else if (status() === 'saved' && savedAt()) {
+      <span>Збережено о {{ savedAt() | date:'HH:mm:ss' }}</span>
+    } @else {
+      <span>Очікування змін</span>
+    }
+  </div>
+</section>

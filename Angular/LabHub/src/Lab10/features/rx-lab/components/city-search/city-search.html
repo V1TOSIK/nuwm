@@ -1,0 +1,45 @@
+
+<section class="city-search">
+  <h2>Пошук міст</h2>
+
+  <input
+    type="text"
+    placeholder="Введіть назву міста..."
+    [value]="query()"
+    (input)="onInput($any($event.target).value)"
+  />
+
+  <div class="counters">
+    <span>Натискання клавіш: {{ keyPresses() }}</span>
+    <span>Надіслані запити: {{ requests() }}</span>
+  </div>
+
+  @if (result().error) {
+    <p class="error">Не вдалося завантажити підказки</p>
+  } @else if (result().query.length < 2) {
+    <p class="hint">Введіть щонайменше 2 символи</p>
+  } @else if (result().items.length === 0) {
+    <p class="hint">Міст не знайдено</p>
+  } @else {
+    <ul class="cities">
+      @for (city of result().items; track city) {
+        <li>{{ city }}</li>
+      }
+    </ul>
+  }
+
+  <div class="history">
+    <h3>Журнал відповідей</h3>
+
+    @if (history().length === 0) {
+      <p class="hint">Відповідей поки немає</p>
+    } @else {
+      @for (entry of history(); track $index) {
+        <div class="history-item">
+          <span>{{ entry.query }}</span>
+          <span>{{ entry.ms }} мс</span>
+        </div>
+      }
+    }
+  </div>
+</section>
