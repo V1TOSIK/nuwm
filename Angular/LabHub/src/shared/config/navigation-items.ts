@@ -3,7 +3,7 @@ import { Lab3Page } from '@/Lab3/pages/lab3.page';
 import { Lab4Page } from '@/Lab4/pages/lab4.page';
 import { Lab5Page } from '@/Lab5/pages/lab5.page';
 import { Lab6Page } from '@/Lab6/pages/lab6.page';
-// import { Lab7Page } from '@/Lab7/pages/lab7.page';
+import { Lab7Page } from '@/Lab7/pages/lab7.page';
 // import { Lab8Page } from '@/Lab8/pages/lab8.page';
 // import { Lab9Page } from '@/Lab9/pages/lab9.page';
 // import { Lab10Page } from '@/Lab10/pages/lab10.page';
@@ -29,11 +29,11 @@ export const LABS = [
     label: 'Lab 6',
     component: Lab6Page
   },
-  // {
-  //   path: ROUTE_PATHS.LAB7,
-  //   label: 'Lab 7',
-  //   component: Lab7Page
-  // },
+  {
+    path: ROUTE_PATHS.LAB7,
+    label: 'Lab 7',
+    component: Lab7Page
+  },
   // {
   //   path: ROUTE_PATHS.LAB8,
   //   label: 'Lab 8',

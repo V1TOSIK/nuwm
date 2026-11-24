@@ -1,0 +1,38 @@
+<main class="lab7-page">
+  <h1>{{ config.appName }}</h1>
+
+  <p class="description">
+    Лабораторна робота №7. Сервіси та Dependency Injection.
+  </p>
+
+  <section class="tasks-section">
+    <h2>Додати задачу</h2>
+    <app-task-form />
+  </section>
+
+  <app-task-stats />
+
+  <app-task-list />
+
+  <section class="counters-section">
+    <h2>Рівні провайдерів</h2>
+
+    <div class="counter-group">
+      <h3>SharedCounter — спільний сервіс</h3>
+
+      <div class="counter-grid">
+        <app-shared-counter />
+        <app-shared-counter />
+      </div>
+    </div>
+
+    <div class="counter-group">
+      <h3>IsolatedCounter — ізольовані сервіси</h3>
+
+      <div class="counter-grid">
+        <app-isolated-counter />
+        <app-isolated-counter />
+      </div>
+    </div>
+  </section>
+</main>

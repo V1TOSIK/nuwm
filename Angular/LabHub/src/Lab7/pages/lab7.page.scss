@@ -1,0 +1,45 @@
+.lab7-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+.description {
+  margin-top: -16px;
+  color: #777;
+}
+
+.tasks-section,
+.counters-section {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.tasks-section h2,
+.counters-section h2 {
+  margin-top: 0;
+}
+
+.counter-group {
+  margin-top: 24px;
+}
+
+.counter-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+@media (max-width: 600px) {
+  .counter-grid {
+    grid-template-columns: 1fr;
+  }
+}

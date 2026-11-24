@@ -1,0 +1,20 @@
+<form class="task-form" (ngSubmit)="addTask()">
+  <input
+    type="text"
+    placeholder="Нова задача..."
+    [ngModel]="title()"
+    (ngModelChange)="title.set($event)"
+    name="title"
+  />
+
+  <button
+    type="submit"
+    [disabled]="tasksStore.totalTasks() >= tasksStore.maxTasks"
+  >
+    Додати
+  </button>
+
+  @if (error()) {
+    <p class="error">{{ error() }}</p>
+  }
+</form>

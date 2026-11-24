@@ -1,0 +1,31 @@
+<section class="task-list">
+  <h2>Мої задачі</h2>
+
+  @for (task of tasksStore.tasks(); track task.id) {
+    <article class="task-item" [class.completed]="task.done">
+      <label>
+        <input
+          type="checkbox"
+          [checked]="task.done"
+          (change)="tasksStore.toggle(task.id)"
+        />
+
+        <span>{{ task.title }}</span>
+      </label>
+
+      <small>
+        {{ task.createdAt | date:'dd.MM.yyyy HH:mm' }}
+      </small>
+
+      <button
+        type="button"
+        class="delete-button"
+        (click)="tasksStore.remove(task.id)"
+      >
+        Видалити
+      </button>
+    </article>
+  } @empty {
+    <p class="empty">Поки що задач немає.</p>
+  }
+</section>

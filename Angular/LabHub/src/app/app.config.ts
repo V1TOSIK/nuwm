@@ -3,12 +3,20 @@ import { provideRouter } from '@angular/router';
 import { routes } from '@/app/app.routes';
 import { SVG_SPRITE_PATH } from '@/Lab3/shared/ui/icon/sprite-path';
 import { LOCALE_ID } from '@angular/core';
+import { APP_CONFIG } from '@/Lab7/core/config/app-config';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideRouter(routes),
     { provide: SVG_SPRITE_PATH, useValue: '/icons/sprite.svg' },
-    { provide: LOCALE_ID, useValue: 'uk' }
+    { provide: LOCALE_ID, useValue: 'uk' },
+    {
+      provide: APP_CONFIG,
+      useValue: {
+        appName: 'Мої задачі',
+        maxTasks: 10,
+      },
+    },
   ]
 };

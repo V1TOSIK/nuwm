@@ -1,0 +1,38 @@
+<section class="task-stats">
+  <h2>Статистика</h2>
+
+  <div class="stats">
+    <div>
+      <span>Усього задач</span>
+      <strong>{{ tasksStore.totalTasks() }}</strong>
+    </div>
+
+    <div>
+      <span>Виконано</span>
+      <strong>{{ tasksStore.completedTasks() }}</strong>
+    </div>
+
+    <div>
+      <span>Залишилось</span>
+      <strong>
+        {{ tasksStore.totalTasks() - tasksStore.completedTasks() }}
+      </strong>
+    </div>
+  </div>
+
+  <div class="progress-info">
+    <span>Прогрес</span>
+    <strong>{{ tasksStore.progress() }}%</strong>
+  </div>
+
+  <div class="progress-bar">
+    <div
+      class="progress-bar__fill"
+      [style.width.%]="tasksStore.progress()"
+    ></div>
+  </div>
+
+  <p>
+    {{ tasksStore.totalTasks() }} / {{ tasksStore.maxTasks }} задач
+  </p>
+</section>
