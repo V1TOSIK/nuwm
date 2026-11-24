@@ -1,0 +1,67 @@
+
+<section class="lab-section">
+  <h2>1. Hover Directive</h2>
+
+  <div class="control">
+    <label for="hover-color">Hover color:</label>
+
+    <input
+      id="hover-color"
+      type="color"
+      [value]="hoverColor()"
+      (input)="hoverColor.set($any($event.target).value)"
+    />
+  </div>
+
+  <p class="hover-target" appHover [hoverColor]="hoverColor()">
+    Наведи курсор на цей елемент
+  </p>
+</section>
+
+<section class="lab-section">
+  <h2>2. Compound Interest Pipe</h2>
+
+  <div class="calculation">
+    <p>Principal (P): 1000</p>
+    <p>Annual rate (r): 0.05</p>
+    <p>Compounds per year (n): 12</p>
+    <p>Years (t): 2</p>
+
+    <p class="result">
+      Result: {{ 1000 | compoundInterest: 0.05 : 12 : 2 | number:'1.2-2' }}
+    </p>
+  </div>
+</section>
+
+<section class="lab-section">
+  <h2>3. Content Projection</h2>
+
+  <app-content-projection>
+    <div class="header">
+      div.header — не відображається
+    </div>
+
+    <div class="footer">
+      div.footer — не відображається
+    </div>
+
+    <div class="card">
+      div.card — не відображається
+    </div>
+
+    <main class="content">
+      <h3>main.content</h3>
+      <p>Цей елемент відображається.</p>
+    </main>
+
+    <header class="container">
+      <h3>header.container</h3>
+      <p>Цей елемент відображається.</p>
+    </header>
+
+    <section class="container">
+      <h3>section.container</h3>
+      <p>Цей елемент також відображається.</p>
+    </section>
+  </app-content-projection>
+</section>
