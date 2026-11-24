@@ -1,0 +1,18 @@
+<div class="rating">
+  @for (starIndex of stars(); track starIndex) {
+    <button
+      type="button"
+      class="rating__star"
+      (click)="rate(starIndex + 1)"
+      [attr.aria-label]="'Оцінка ' + (starIndex + 1)"
+      [disabled]="readonly()"
+    >
+      <app-icon
+        name="star"
+        [class.filled]="starIndex + 1 <= value()"
+        [stroke]="starIndex + 1 <= value() ? 'gold' : 'currentColor'"
+        [fill]="starIndex + 1 <= value() ? 'gold' : 'none'"
+      />
+    </button>
+  }
+</div>

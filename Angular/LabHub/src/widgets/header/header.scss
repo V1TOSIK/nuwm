@@ -1,0 +1,43 @@
+.header {
+    background: #18181b;
+    border-bottom: 1px solid #27272a;
+    padding: 12px 24px;
+}
+
+.navigation {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__link {
+        display: block;
+        padding: 9px 16px;
+        border-radius: 8px;
+
+        color: #a1a1aa;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+
+        transition: background 0.2s ease, color 0.2s ease;
+
+        &:hover {
+            background: #27272a;
+            color: #ffffff;
+        }
+
+        &--active {
+            background: #3b3b46;
+            color: #ffffff;
+        }
+    }
+}

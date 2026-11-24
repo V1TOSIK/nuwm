@@ -1,0 +1,14 @@
+<header class="header">
+  <a class="header__logo" routerLink="/">
+    BoardGames
+  </a>
+
+  <div class="header__cart">
+    <app-icon name="cart" />
+
+    <div class="header__cart-info">
+      <span>Кошик: {{ cartCount() }}</span>
+      <span>{{ cartTotal() | currency:'UAH':'symbol':'1.0-0' }}</span>
+    </div>
+  </div>
+</header>

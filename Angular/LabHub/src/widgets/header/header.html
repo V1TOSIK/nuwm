@@ -1,0 +1,17 @@
+<div class="header">
+    <nav class="navigation">
+        <ul class="navigation__list">
+            @for (lab of labs; track lab.path) {
+                <li class="navigation__item">
+                    <a
+                        class="navigation__link"
+                        [routerLink]="['/labs', lab.path]"
+                        routerLinkActive="navigation__link--active"
+                    >
+                        {{ lab.label }}
+                    </a>
+                </li>
+            }
+        </ul>
+    </nav>
+</div>

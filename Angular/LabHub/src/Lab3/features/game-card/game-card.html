@@ -1,0 +1,39 @@
+<div class="game-card" [class.sold-out]="!game().inStock">
+    <div class="cover">
+        <img [src]="game().cover" [alt]="game().title" />
+    </div>
+
+    <div class="info">
+        <h3 class="title">{{ game().title }}</h3>
+
+        <p class="price">
+            {{ game().price | currency:'UAH':'symbol':'1.0-0' }}
+        </p>
+
+        <p class="players">Гравців: {{ game().players }}</p>
+
+        <div class="complexity">
+            <span>Складність: {{ game().complexity }}/5</span>
+            <div class="complexity__track">
+                <div
+                    class="complexity__fill"
+                    [style.width.%]="game().complexity * 20"
+                ></div>
+            </div>
+        </div>
+
+        <app-rating
+            [value]="game().rating"
+            [readonly]="true"
+        />
+    </div>
+
+    <button
+        class="buy-button"
+        type="button"
+        (click)="addToCart.emit(game())"
+        [disabled]="!game().inStock"
+    >
+        У кошик
+    </button>
+</div>

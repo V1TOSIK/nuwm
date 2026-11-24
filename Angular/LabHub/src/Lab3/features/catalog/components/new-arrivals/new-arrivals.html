@@ -1,0 +1,13 @@
+<section class="experiment">
+  <h2>Експеримент: OnPush та Input</h2>
+
+  <p>Кількість ігор: {{ games().length }}</p>
+
+  <ul>
+    @for (game of games(); track game.id) {
+      <li>{{ game.title }}</li>
+    } @empty {
+      <li>Список порожній</li>
+    }
+  </ul>
+</section>

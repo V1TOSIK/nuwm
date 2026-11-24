@@ -1,0 +1,52 @@
+<section class="catalog">
+  <app-lab3-header class="catalog__header">
+    <h1>Каталог настільних ігор</h1>
+    <p>Знайди гру для наступного вечора</p>
+  </app-lab3-header>
+
+  <app-new-arrivals [games]="newArrivals()" />
+
+  <div class="filters">
+    <input
+      type="search"
+      placeholder="Пошук за назвою..."
+      [value]="searchQuery()"
+      (input)="onSearchChange($event)"
+    />
+
+    <div class="filters__rating">
+      <span>Мінімальний рейтинг:</span>
+
+      <app-rating
+        [value]="minRating()"
+        [maxCount]="5"
+        (valueChange)="onRatingChange($event)"
+      />
+    </div>
+  </div>
+
+  <div class="games-grid">
+    @for (game of filteredGames(); track game.id) {
+      <app-game-card
+        [game]="game"
+        (addToCart)="addToCart($event)"
+      />
+    } @empty {
+      <p class="empty-message">Ігор не знайдено.</p>
+    }
+  </div>
+</section>
+
+<section class="experiment-controls">
+  <h2>Експеримент з OnPush</h2>
+
+  <button type="button" (click)="mutateParentArray()">
+    Мутація масиву
+  </button>
+
+  <button type="button" (click)="replaceParentArray()">
+    Створити новий масив
+  </button>
+
+  <app-new-arrivals [games]="experimentGames()" />
+</section>
