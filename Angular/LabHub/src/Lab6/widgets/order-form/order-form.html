@@ -1,0 +1,227 @@
+<form [formGroup]="form" (ngSubmit)="submit()" class="order-form">
+
+  <section class="form-section">
+    <h2>Контактні дані</h2>
+
+    <div formGroupName="contact">
+      <div class="field">
+        <label for="fullName">ПІБ</label>
+        <input id="fullName" type="text" formControlName="fullName" />
+
+        @if (form.controls.contact.controls.fullName.touched &&
+             form.controls.contact.controls.fullName.invalid) {
+          <small class="error">
+            {{ getErrorMessage(form.controls.contact.controls.fullName) }}
+          </small>
+        }
+      </div>
+
+      <div class="field">
+        <label for="phone">Телефон</label>
+        <input
+          id="phone"
+          type="tel"
+          formControlName="phone"
+          placeholder="+380XXXXXXXXX"
+        />
+
+        @if (form.controls.contact.controls.phone.touched &&
+             form.controls.contact.controls.phone.invalid) {
+          <small class="error">
+            {{ getErrorMessage(form.controls.contact.controls.phone) }}
+          </small>
+        }
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" type="email" formControlName="email" />
+
+        @if (form.controls.contact.controls.email.touched &&
+             form.controls.contact.controls.email.invalid) {
+          <small class="error">
+            {{ getErrorMessage(form.controls.contact.controls.email) }}
+          </small>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>Спосіб доставки</h2>
+
+    <div class="radio-group">
+      <label>
+        <input type="radio" formControlName="delivery" value="pickup" />
+        Самовивіз
+      </label>
+
+      <label>
+        <input type="radio" formControlName="delivery" value="courier" />
+        Кур'єр
+      </label>
+    </div>
+
+    @if (form.controls.delivery.value === 'courier') {
+      <div formGroupName="address" class="address-fields">
+        <div class="field">
+          <label for="city">Місто</label>
+          <input id="city" type="text" formControlName="city" />
+
+          @if (form.controls.address.controls.city.touched &&
+               form.controls.address.controls.city.invalid) {
+            <small class="error">
+              {{ getErrorMessage(form.controls.address.controls.city) }}
+            </small>
+          }
+        </div>
+
+        <div class="field">
+          <label for="street">Вулиця та будинок</label>
+          <input id="street" type="text" formControlName="street" />
+
+          @if (form.controls.address.controls.street.touched &&
+               form.controls.address.controls.street.invalid) {
+            <small class="error">
+              {{ getErrorMessage(form.controls.address.controls.street) }}
+            </small>
+          }
+        </div>
+      </div>
+    }
+  </section>
+
+  <section class="form-section">
+    <h2>Товари</h2>
+
+    <div formArrayName="items" class="items-list">
+      @for (item of items.controls; track $index; let i = $index) {
+        <div class="item-row" [formGroupName]="i">
+          <div class="field product-field">
+            <label>Товар</label>
+
+            <select formControlName="productId">
+              <option [ngValue]="null">Оберіть товар</option>
+
+              @for (product of products; track product.id) {
+                <option [ngValue]="product.id">
+                  {{ product.name }} — {{ product.price | currency:'UAH':'symbol':'1.0-0' }}
+                </option>
+              }
+            </select>
+
+            @if (item.controls.productId.touched &&
+                 item.controls.productId.invalid) {
+              <small class="error">
+                {{ getErrorMessage(item.controls.productId) }}
+              </small>
+            }
+          </div>
+
+          <div class="field quantity-field">
+            <label>Кількість</label>
+
+            <input
+              type="number"
+              formControlName="quantity"
+              min="1"
+              max="10"
+            />
+
+            @if (item.controls.quantity.touched &&
+                 item.controls.quantity.invalid) {
+              <small class="error">
+                {{ getErrorMessage(item.controls.quantity) }}
+              </small>
+            }
+          </div>
+
+          <button
+            type="button"
+            class="remove-button"
+            [disabled]="items.length === 1"
+            (click)="removeItem(i)"
+          >
+            Видалити
+          </button>
+        </div>
+      }
+    </div>
+
+    @if (items.touched && items.hasError('minItems')) {
+      <small class="error">
+        {{ errorMessages['minItems'] }}
+      </small>
+    }
+
+    <button type="button" class="add-button" (click)="addItem()">
+      + Додати товар
+    </button>
+  </section>
+
+  <section class="form-section">
+    <h2>Промокод</h2>
+
+    <div class="field">
+      <label for="promoCode">Промокод (необов'язково)</label>
+
+      <input
+        id="promoCode"
+        type="text"
+        formControlName="promoCode"
+        placeholder="Наприклад, STUDENT10"
+      />
+
+      @if (form.controls.promoCode.pending) {
+        <small class="pending">Перевірка…</small>
+      }
+
+      @if (form.controls.promoCode.touched &&
+           form.controls.promoCode.hasError('promoInvalid')) {
+        <small class="error">
+          {{ getErrorMessage(form.controls.promoCode) }}
+        </small>
+      }
+
+      @if (promoDiscount() > 0 && form.controls.promoCode.valid) {
+        <small class="success">
+          Знижка: {{ promoDiscount() | percent }}
+        </small>
+      }
+    </div>
+  </section>
+
+  <section class="summary">
+    <h2>Підсумок замовлення</h2>
+
+    <div>
+      <span>Сума без знижки:</span>
+      <strong>{{ subtotal() | currency:'UAH':'symbol':'1.2-2' }}</strong>
+    </div>
+
+    <div>
+      <span>Знижка:</span>
+      <strong>{{ discountAmount() | currency:'UAH':'symbol':'1.2-2' }}</strong>
+    </div>
+
+    <div class="total">
+      <span>До сплати:</span>
+      <strong>{{ total() | currency:'UAH':'symbol':'1.2-2' }}</strong>
+    </div>
+  </section>
+
+  <button
+    type="submit"
+    class="submit-button"
+    [disabled]="form.invalid || form.pending"
+  >
+    Оформити замовлення
+  </button>
+
+  @if (submitted()) {
+    <p class="success-message">
+      Замовлення успішно оформлено!
+    </p>
+  }
+
+</form>

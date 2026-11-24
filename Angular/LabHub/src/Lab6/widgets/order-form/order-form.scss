@@ -1,0 +1,160 @@
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 850px;
+}
+
+.form-section {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.form-section h2,
+.summary h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.radio-group {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.address-fields {
+  margin-top: 16px;
+}
+
+.item-row {
+  display: grid;
+  grid-template-columns: 1fr 100px auto;
+  align-items: start;
+  gap: 12px;
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.product-field,
+.quantity-field {
+  min-width: 0;
+}
+
+.add-button,
+.remove-button,
+.submit-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.add-button {
+  margin-top: 16px;
+  background: #e8f2ff;
+  color: #1565c0;
+}
+
+.remove-button {
+  margin-top: 24px;
+  background: #ffebee;
+  color: #c62828;
+}
+
+.remove-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.summary {
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.summary > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.summary .total {
+  padding-top: 12px;
+  border-top: 1px solid #ccc;
+  font-size: 20px;
+}
+
+.submit-button {
+  background: #1976d2;
+  color: white;
+  font-weight: 600;
+}
+
+.submit-button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #d32f2f;
+  font-size: 13px;
+}
+
+.pending {
+  color: #ed8b00;
+  font-size: 13px;
+}
+
+.success {
+  color: #2e7d32;
+  font-size: 13px;
+}
+
+.success-message {
+  padding: 12px;
+  color: #2e7d32;
+  background: #e8f5e9;
+  border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+  .item-row {
+    grid-template-columns: 1fr;
+  }
+
+  .remove-button {
+    margin-top: 0;
+    justify-self: start;
+  }
+
+  .radio-group {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
