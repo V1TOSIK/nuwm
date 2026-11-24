@@ -1,5 +1,106 @@
+
+# ==============================
+# IDE / Editors
+# ==============================
+
 .vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# ==============================
+# OS
+# ==============================
 
 /os/
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
 
-Programming/LabHub/build/
+# ==============================
+# .NET / C#
+# ==============================
+
+**/bin/
+**/obj/
+**/out/
+**/publish/
+**/TestResults/
+*.user
+*.suo
+*.cache
+*.pdb
+*.dll
+*.exe
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+# Visual Studio
+.vs/
+
+# ==============================
+# Build artifacts
+# ==============================
+
+/Programming/LabHub/build/
+**/dist/
+**/build/
+
+# ==============================
+# Angular / Node.js
+# ==============================
+
+**/node_modules/
+**/.angular/
+**/coverage/
+**/.nyc_output/
+
+# Angular generated files
+**/src/environments/environment*.local.ts
+
+# npm / yarn / pnpm logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ==============================
+# Environment / Secrets
+# ==============================
+
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Certificates and private keys
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+
+# ==============================
+# Logs
+# ==============================
+
+*.log
+logs/
+
+# ==============================
+# Temporary files
+# ==============================
+
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~

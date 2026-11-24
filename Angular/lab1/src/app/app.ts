@@ -3,9 +3,10 @@ import { RouterOutlet } from '@angular/router';
 import { Header } from './core/layout/header/header';
 import { MenuPage } from './features/menu/pages/menu-page/menu-page';
 import { ProgresBar } from './shared/ui/progres-bar/progres-bar';
+import { Result } from './shared/ui/result/result';
 
 @Component({
-  imports: [RouterOutlet, Header, MenuPage, ProgresBar],
+  imports: [RouterOutlet, Header, MenuPage, Result, ProgresBar],
   selector: 'app-root',
   templateUrl: './app.html',
 })

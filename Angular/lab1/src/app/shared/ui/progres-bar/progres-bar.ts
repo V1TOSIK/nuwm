@@ -8,7 +8,6 @@ import { Component, signal } from '@angular/core';
 })
 export class ProgresBar {
   protected progress = signal(0);
-  private color: string = 'blue';
 
   private setProgress(value: number): void {
     this.progress.set(Math.min(100, Math.max(0, value)));
