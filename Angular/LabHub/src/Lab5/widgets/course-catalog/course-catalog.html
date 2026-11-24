@@ -1,0 +1,113 @@
+<section class="catalog">
+  <header class="catalog__header">
+    <div>
+      <h2>Каталог курсів</h2>
+      <p>Оберіть курс для навчання</p>
+    </div>
+
+    <div class="role-control">
+      <label for="role">Поточна роль:</label>
+
+      <select
+        id="role"
+        [value]="roleService.currentRole()"
+        (change)="changeRole($any($event.target).value)"
+      >
+        <option value="user">User</option>
+        <option value="admin">Admin</option>
+      </select>
+    </div>
+  </header>
+
+  <div class="filter">
+    <label for="level">Рівень складності:</label>
+
+    <select
+      id="level"
+      [value]="selectedLevel()"
+      (change)="selectedLevel.set($any($event.target).value)"
+    >
+      <option value="all">Усі</option>
+      <option value="beginner">Початковий</option>
+      <option value="intermediate">Середній</option>
+      <option value="advanced">Просунутий</option>
+    </select>
+  </div>
+
+  <div class="courses">
+    @for (course of filteredCourses(); track course.id) {
+      <article class="course-card" appHighlight [appLevel]="course.level">
+        <div class="course-card__header">
+          <h3>{{ course.title }}</h3>
+
+          <span class="level" [attr.data-level]="course.level">
+            @switch (course.level) {
+              @case ('beginner') {
+                Початковий
+              }
+              @case ('intermediate') {
+                Середній
+              }
+              @case ('advanced') {
+                Просунутий
+              }
+            }
+          </span>
+        </div>
+
+        <p class="description">
+          {{ course.description | truncate:60 }}
+        </p>
+
+        <div class="price">
+          @if (course.discount > 0) {
+            <span class="old-price">
+              {{ course.price | currency:'UAH':'symbol':'1.0-0' }}
+            </span>
+
+            <span class="discount">
+              {{ -course.discount | percent }}
+            </span>
+
+            <strong class="new-price">
+              {{ course.price * (1 - course.discount) | currency:'UAH':'symbol':'1.0-0' }}
+            </strong>
+          } @else {
+            <strong class="new-price">
+              {{ course.price | currency:'UAH':'symbol':'1.0-0' }}
+            </strong>
+          }
+        </div>
+
+        <div class="course-info">
+          <p>
+            Початок:
+            {{ course.startDate | date:'d MMMM y' }}
+          </p>
+
+          <p>
+            @if (course.seatsLeft > 0) {
+              Вільно:
+              {{ course.seatsLeft }}
+              {{ course.seatsLeft | plural:['місце', 'місця', 'місць'] }}
+            } @else {
+              Місць немає
+            }
+          </p>
+        </div>
+
+        <button
+          type="button"
+          class="edit-button"
+          *appHasRole="'admin'"
+        >
+          Редагувати
+        </button>
+      </article>
+    } @empty {
+      <p class="empty-message">
+        Курсів для вибраного рівня немає.
+      </p>
+    }
+  </div>
+</section>

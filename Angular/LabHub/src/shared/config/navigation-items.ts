@@ -1,6 +1,7 @@
 import { ROUTE_PATHS } from '@/shared/config/route-paths';
 import { Lab3Page } from '@/Lab3/pages/lab3.page';
 import { Lab4Page } from '@/Lab4/pages/lab4.page';
+import { Lab5Page } from '@/Lab5/pages/lab5.page';
 
 export const LABS = [
   {
@@ -12,5 +13,10 @@ export const LABS = [
     path: ROUTE_PATHS.LAB4,
     label: 'Lab 4',
     component: Lab4Page
+  },
+  {
+    path: ROUTE_PATHS.LAB5,
+    label: 'Lab 5',
+    component: Lab5Page
   }
 ] as const;
