@@ -1,4 +1,6 @@
 import { ROUTE_PATHS } from '@/shared/config/route-paths';
+import { Lab1Page } from '@/Lab1/pages/lab1.page';
+import { Lab2Page } from '@/Lab2/pages/lab2.page';
 import { Lab3Page } from '@/Lab3/pages/lab3.page';
 import { Lab4Page } from '@/Lab4/pages/lab4.page';
 import { Lab5Page } from '@/Lab5/pages/lab5.page';
@@ -9,6 +11,16 @@ import { lab89Routes } from '@/Lab8_9/app.routes';
 import { RxLabPage } from '@/Lab10/features/rx-lab/pages/rx-lab.page';
 
 export const LABS = [
+  {
+    path: ROUTE_PATHS.LAB1,
+    label: 'Lab 1',
+    component: Lab1Page
+  },
+  {
+    path: ROUTE_PATHS.LAB2,
+    label: 'Lab 2',
+    component: Lab2Page
+  },
   {
     path: ROUTE_PATHS.LAB3,
     label: 'Lab 3',

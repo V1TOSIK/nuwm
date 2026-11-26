@@ -1,3 +1,4 @@
+<app-header></app-header>
 <div>
     <app-category-filter (checked)="category.set($event)"></app-category-filter>
     <app-menu-list [list]="drinks()" (added)="onDrinkAdded($event)"></app-menu-list>

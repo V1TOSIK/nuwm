@@ -25,6 +25,12 @@ export class Lab3Page {
   private readonly gamesService = inject(GamesService);
   private readonly cartService = inject(CartService);
 
+  stringValue: String = "Test";
+
+  onClick(): void{
+    this.stringValue = "Changed"
+  }
+
   readonly games = this.gamesService.getAll();
 
   readonly searchQuery = signal('');

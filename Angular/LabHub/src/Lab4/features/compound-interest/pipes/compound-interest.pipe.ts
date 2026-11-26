@@ -1,9 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'compoundInterest',
-  standalone: true,
-  pure: true,
+  name: 'compoundInterest'
 })
 export class CompoundInterestPipe implements PipeTransform {
   private readonly cache = new Map<string, number>();

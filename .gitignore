@@ -104,3 +104,6 @@ logs/
 *.swp
 *.swo
 *~
+
+
+*/angular-test-app-v2
